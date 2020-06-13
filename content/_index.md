@@ -8,7 +8,7 @@ weight = 0
 
 This site's content is designed to be consumed by large number of AWS customers in a self-service manner in order to have their AWS workload fulfill the core best practices that are common to a wide variety of workloads.
 
-The content is served as guidelines and not an assurance. Baseline, given the definition below, may vary depending on state of the workload. While the content in this site attempts to cover the most common best practices, do engage your account team for further advices for your specific workload.
+The content is served as a guideline and not as an assurance. Baseline, given the definition below, may vary depending on the state of the workload. While the content in this site attempts to cover the most common best practices, do engage your account team for further advices of your specific workload.
 
 ## Definition
 
