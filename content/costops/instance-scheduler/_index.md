@@ -14,7 +14,7 @@ The AWS Instance Scheduler is a simple AWS-provided solution that enables custom
 
 1. A workload with either EC2 instances or RDS or both
 
-### Step-by-Step Guide HERE
+### Step-by-Step Guide
 
 1. Access the solution [[link](https://aws.amazon.com/solutions/implementations/instance-scheduler/)].
 1. Review the architecture and understand which components will be deployed.
