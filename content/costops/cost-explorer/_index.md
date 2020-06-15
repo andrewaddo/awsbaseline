@@ -8,16 +8,16 @@ This section presents a process in analyzing and optimizing your AWS costs. This
 
 ### What are expected outcomes?
 
-1. Immediate actions that can reduce your AWS costs
-2. Understand the process and able to repeat the process frequently
+1. Immediate actions that can reduce your AWS costs.
+2. Understand the process and able to repeat the process frequently.
 
 ### Pre-requisites
 
-1. Have access to Billing console [[link](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/control-access-billing.html)]
-2. Enable Rightsizing Recommendations on Cost Explorer console [[link](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-rightsizing.html)]
+1. Have access to Billing console [[link](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/control-access-billing.html)].
+2. Enable Rightsizing Recommendations on Cost Explorer console [[link](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-rightsizing.html)].
 3. Understand key concepts
-   * Cost Explorer [[link](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/)]
-   * Amazon EC2 pricing [[link](https://aws.amazon.com/ec2/pricing/)]
+   * Cost Explorer [[link](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/)].
+   * Amazon EC2 pricing models [[link](https://aws.amazon.com/ec2/pricing/)].
 
 ### Step-by-Step Guide
 
@@ -41,42 +41,42 @@ Follow below sections for each component contributed the most to your costs
 
 For examples, in the above image, if ElastiCache is identified to be no longer in use, the resource on ElastiCache should be removed.
 
-From this step onwards, change the frequency from “Monthly” to “Daily”
+From this step onwards, let's change the frequency from “Monthly” to “Daily”
 
 #### EC2
 
 1. Service: “EC2-Instances” (Note: ECS and EKS are not within this scope)
-1. Group by: More > “Purchase Option”. The graph provides information on potential gaps for additional Reserved Instances or Savings Plan instead of On Demand. 
-   * Use Amazon [EC2 Spot Instances](https://aws.amazon.com/ec2/spot/?track=costop) to reduce EC2 costs [1]. 
-   * Use Compute [Savings Plans](https://aws.amazon.com/savingsplans/?track=costop) to reduce EC2, Fargate and Lambda costs [2]
+1. Group by: More > “Purchase Option”. The graph provides information on potential gaps for additional Reserved Instances or Savings Plan instead of On Demand.
+   * Use Amazon [EC2 Spot Instances](https://aws.amazon.com/ec2/spot/?track=costop) to reduce EC2 costs [1].
+   * Use Compute [Savings Plans](https://aws.amazon.com/savingsplans/?track=costop) to reduce EC2, Fargate and Lambda costs [2].
 ![Image: CO_2_EC2_PurchaseOption.png](../img/CO_2_EC2_PurchaseOption.png)
-1. Observe whether the resource dynamically scaled up and down or flat.
-   * Use Auto Scaling Group (ASG) to dynamically adjust the resource according to traffic. Especially for non-production environments, ASG should be configured to scale down to 0.
-   * Identify instances with low-utilization and reduce cost by stopping or rightsizing [3]
-1. Change Group by option to “Instance Type”, observe if there is T, AMD or ARM instance types are used. For suitable workloads, [ARM](https://aws.amazon.com/ec2/instance-types/a1/) provides cost saving compared to other types.
-1. Change Group by option to “Tag: Environment”, given proper tagging, observe if non-production environment’s resources are scaled up and down, especially during the weekend
+1. Observe whether the resources are dynamically scaled up and down or remain flat.
+   * Use Auto Scaling Group (ASG) to dynamically adjust the resources according to your business need. Especially for non-production environments, ASG should be configured to scale down even to 0.
+   * Identify instances with low-utilization and reduce cost by stopping or rightsizing [3].
+1. Change Group by option to “Instance Type”, observe if there is T, AMD or ARM instance types are used. For suitable workloads, [ARM](https://aws.amazon.com/ec2/instance-types/a1/) instance type provides cost saving up to 30% compared to other types.
+1. Change Group by option to “Tag: Environment”, given proper tagging, observe if non-production environment’s resources are scaled up and down, especially during the weekend. In addition, if your development environment does not have strict requirement on latency, you have option to run this development environment on other regions, such as US regions, which have lower cost for the same instance types in other regions such as Singapore.
 ![Image: CO_3_EC2_EnvTags.png](../img/CO_3_EC2_EnvTags.png)
-1. Click on the “Recommendations” link to view “Resource optimization recommendations”, select “View all”        
+1. Click on the “Recommendations” link on the left menu to view “Resource optimization recommendations”, select “View all”        
 ![Image: CO_4_EC2_RightSizing.png](../img/CO_4_EC2_RightSizing.png)
 
 #### RDS
 
-1. Service: “Relational Database Service” (search for RDS)
-1. Group by: More > “Purchase Option”. The graph provides information on potential gaps for additional Reserved Instances instead of On Demand. Use Reserved Instances (RI) to reduce RDS, Redshift, ElastiCache and Elasticsearch costs [4]
+1. Service: “Relational Database Service” (search for RDS).
+1. Group by: More > “Purchase Option”. The graph provides information on potential gaps for additional Reserved Instances instead of On Demand. Use Reserved Instances (RI) to reduce RDS, Redshift, ElastiCache and Elasticsearch costs [4].
 ![Image: CO_1_RDS_PurchaseOption.png](../img/CO_1_RDS_PurchaseOption.png)
-1. Observe whether the resource dynamically scaled up and down or constant
-1. Group by: “Instance type”, observe if there is T, AMD or ARM instance types are used. For suitable workloads, [ARM](https://aws.amazon.com/ec2/instance-types/a1/) provides cost saving compared to other types.
+1. Observe whether the resources are dynamically scaled up and down or remain constant. Similar to EC2, you can schedule to turn off and on RDS resources as needed. In addition, [Amazon Aurora Serverless](https://aws.amazon.com/rds/aurora/serverless/) provides the ability to autoscale your database, even to 0.
+1. Group by: “Instance type”. Observe if there is T, AMD or ARM instance types are used. For suitable workloads, [ARM](https://aws.amazon.com/ec2/instance-types/a1/) instance type provides cost saving up to 30% compared to other types. Change T instance type to M, or R for production workload.
 ![Image: CO_2_RDS_InstanceType.png](../img/CO_2_RDS_InstanceType.png)
-1. Change Group by option to “Tag: Environment”, given proper tagging, observe if non-production environment’s resources are scaled up and down, especially during the weekend. Identify instances with low-utilization and reduce cost by stopping or rightsizing [3]
+1. Change Group by option to “Tag: Environment”, given proper tagging, observe if non-production environment’s resources are scaled up and down, especially during the weekend. Identify instances with low-utilization and reduce cost by stopping or rightsizing [3].
 ![Image: CO_3_RDS_Envs.png](../img/CO_3_RDS_Envs.png)
 
 #### EC2 Other
 
-1. Service: “EC2-Other”, group by “API operation” to see which services are the biggest contributors
+1. Service: “EC2-Other”, group by “API operation” to see which services are the biggest contributors.
 ![Image: CO_1_EC2_Other.png](../img/CO_1_EC2_Other.png)
 1. Optimization options are:
-    * If “CreateSnapshot” is significant (e.g. > half of GP2 spend indicated by “CreateVolume-Gp2”), review the snapshot policy for how long snapshots are being retained, and how frequently snapshots are occurring
-    * Identify Amazon EBS volumes with low-utilization and reduce cost by snapshotting then deleting them [5]
+    * If “CreateSnapshot” is significant (e.g. > half of GP2 spend indicated by “CreateVolume-Gp2”), review the snapshot policy for how long snapshots are being retained, and how frequently snapshots are occurring.
+    * Identify Amazon EBS volumes with low-utilization and reduce cost by snapshotting, downsizing the volume, or even deleting them if they are no longer in use. [5]
 
 #### ElasticCache
 
@@ -85,16 +85,16 @@ From this step onwards, change the frequency from “Monthly” to “Daily”
 #### S3
 
 1. Analyze Amazon S3 usage and reduce cost by leveraging lower cost storage tiers. Use [S3 Analytics](https://docs.aws.amazon.com/AmazonS3/latest/dev/analytics-storage-class.html) to analyze storage access patterns on the object data set for 30 days or longer. [6]
+![Image: amazon-s3-aws-storage-classes.png](../img/amazon-s3-aws-storage-classes.png)
 
-#### Other possibilities: DynamoDB, EMR
+#### Other opportunities: DynamoDB, EMR, Redshift
 
 1. DynamoDB
-    * Analyze Amazon DynamoDB usage and reduce cost by leveraging Autoscaling or On-demand [7]
+    * Analyze Amazon DynamoDB usage and reduce cost by leveraging Autoscaling or On-demand [7] instead of fixed provisioned capacity.
 1. EMR
-    * Use Amazon [EC2 Spot Instances](https://aws.amazon.com/ec2/spot/?track=costop) to reduce EC2 costs [1]
+    * Use Amazon [EC2 Spot Instances](https://aws.amazon.com/ec2/spot/?track=costop) to reduce EC2 costs [1].
 1. Redshift
-    * Redshift recently announced redshift [pause and resume](https://aws.amazon.com/about-aws/whats-new/2020/03/amazon-redshift-launches-pause-resume/)
-    * No-upfront 1 year RDS RIs is great way to receive ~25% to 35% off your RDS instances
+    * Redshift recently announced redshift [pause and resume](https://aws.amazon.com/about-aws/whats-new/2020/03/amazon-redshift-launches-pause-resume/) allowing saving cost when they are not in use.
 
 ### References
 
