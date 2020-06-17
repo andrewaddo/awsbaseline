@@ -4,12 +4,12 @@ date =  2020-06-13T16:20:15+08:00
 weight = 2
 +++
 
-This chapter discusses DDOS attacks and the AWS services you can use to combat against them. You will also find hands-on labs that you can try at the end of the section before configuring your own system. Let’s begin!
+This section discusses DDOS attacks and the AWS services you can use to combat against them. You will also find hands-on labs that you can try at the end of the section before configuring your own system. Let’s begin!
 
 ### What are expected outcomes?
 
-1. Learn about AWS Shield and WAF
-2. Successfully setup an environment resilient to DDOS attacks
+1. Learn about AWS Shield and WAF.
+2. Successfully setup an environment resilient to DDOS attacks.
 
 ### Pre-requisites
 
@@ -27,15 +27,15 @@ To understand how you can protect yourself from DDOS attacks, you can watch the 
 ### Best Practices for DDOS Resiliency
 
 There are different types of attacks and AWS provides different services for each of them.
-[Image: image.png]
+![types of threat](../img/DDOS_TypesOfThreat.png "types of threat")
 
 #### Infrastructure Layer Attacks
 
-Infrastructure Layer Attacks The most common DDoS attacks, UDP reflection attacks and SYN floods, are infrastructure layer attacks. An attacker can use either of these methods to generate large volumes of traffic that can inundate the capacity of a network or tie up resources on systems like a server, firewall, IPS, or load balancer. While these attacks can be easy to identify, to effectively mitigate them, you must have a network or systems that scale up capacity more rapidly than the inbound traffic flood.
+The most common DDoS attacks, UDP reflection attacks and SYN floods, are infrastructure layer attacks. An attacker can use either of these methods to generate large volumes of traffic that can inundate the capacity of a network or tie up resources on systems like a server, firewall, IPS, or load balancer. While these attacks can be easy to identify, to effectively mitigate them, you must have a network or systems that scale up capacity more rapidly than the inbound traffic flood.
 
 #### Application Layer Attacks
 
-An attacker may target the application itself by using a layer 7 or application layer attack. In these attacks, similar to SYN flood infrastructure attacks, the attacker attempts to overload specific functions of an application to make the application unavailable or extremely unresponsive to legitimate users. 
+An attacker may target the application itself by using a layer 7 or application layer attack. In these attacks, similar to SYN flood infrastructure attacks, the attacker attempts to overload specific functions of an application to make the application unavailable or extremely unresponsive to legitimate users.
 
 You can watch the [video](https://www.youtube.com/watch?v=HnoZS5jj7pk&t=3s) below to find out more:
 {{< youtube id="HnoZS5jj7pk" >}}
@@ -55,9 +55,9 @@ You can find out more in this [documentation](https://docs.aws.amazon.com/waf/la
 
 ### What is AWS WAF and Why You Should Use It
 
-AWS WAF is a web application firewall that helps protect your web applications or APIs against common web exploits that may affect availability, compromise security, or consume excessive resources. 
+AWS WAF is a web application firewall that helps protect your web applications or APIs against common web exploits that may affect availability, compromise security, or consume excessive resources.
 
-AWS WAF gives you control over how traffic reaches your applications by enabling you to create security rules that block common attack patterns, such as SQL injection or cross-site scripting, and rules that filter out specific traffic patterns you define. 
+AWS WAF gives you control over how traffic reaches your applications by enabling you to create security rules that block common attack patterns, such as SQL injection or cross-site scripting, and rules that filter out specific traffic patterns you define.
 
 AWS WAF provides: web traffic filtering with custom rules, malicious request blocking and active monitoring and tuning.
 
@@ -66,13 +66,12 @@ You can watch the [video](https://www.youtube.com/watch?v=2lAcE3NA2UU) below to 
 
 ### HANDS-ON LAB TO PROTECT AGAINST DDOS ATTACKS
 
-#### Activating AWS Shield Advanced for Your Application (Step-by-step Guide)
-
-This [documentation](https://docs.aws.amazon.com/waf/latest/developerguide/enable-ddos-prem.html) will show you how to activate AWS Shield Advanced
-
 #### Protecting against network and host-level attacks with AWS WAF
 
-This [lab](https://wellarchitectedlabs.com/Security/200_CloudFront_with_WAF_Protection/README.html) will show you hot setup AWS WAF and Amazon Cloudfront to protect against network based attacks
+This [lab](https://wellarchitectedlabs.com/security/200_labs/200_basic_ec2_with_waf_protection/) will show you how to set up AWS WAF to protect your workload behind Application Load Balancer.
 
+This [lab](https://wellarchitectedlabs.com/Security/200_CloudFront_with_WAF_Protection/README.html) will show you how to set up AWS WAF and Amazon Cloudfront to protect against network based attacks.
 
+#### Activating AWS Shield Advanced for Your Application (Step-by-step Guide)
 
+This [documentation](https://docs.aws.amazon.com/waf/latest/developerguide/enable-ddos-prem.html) will show you how to activate AWS Shield Advanced.
