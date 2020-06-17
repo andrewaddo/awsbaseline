@@ -39,7 +39,7 @@ You can find more details in this [documentation](https://docs.aws.amazon.com/or
 
 ## Setting up AWS Organization
 
-[![Set up AWS Organizations](https://img.youtube.com/vi/mScBPL8VV48/0.jpg)](https://www.youtube.com/watch?v=mScBPL8VV48)
+{{< youtube id="mScBPL8VV48" >}}
 
 In this [guide](https://aws.amazon.com/premiumsupport/knowledge-center/get-started-organizations/), you create your organization and configure it with two AWS member accounts. You create one of the member accounts in your organization, and you invite the other account to join your organization. Next, you use the [allow list](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_getting-started_concepts.html#allowlist) technique to specify that account administrators can delegate only explicitly listed services and actions. 
 
@@ -69,7 +69,7 @@ As your organization grows, it is important to track changes that occur across y
 * **Accounting visibility**: view resources and charges per client’s deployment. Simplify payment process with single master payer account.
 
 You can watch the video here to learn more about AWS Landing Zone.
-[![Set up AWS Organizations](https://img.youtube.com/vi/-u9LK8Dueyc/0.jpg)](https://www.youtube.com/watch?v=-u9LK8Dueyc)
+{{< youtube id="-u9LK8Dueyc" >}}
 
 ### Control Tower
 
