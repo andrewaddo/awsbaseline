@@ -29,18 +29,19 @@ To understand how you can protect yourself from DDOS attacks, you can watch the 
 There are different types of attacks and AWS provides different services for each of them.
 [Image: image.png]
 
-### Infrastructure Layer Attacks
+#### Infrastructure Layer Attacks
 
 Infrastructure Layer Attacks The most common DDoS attacks, UDP reflection attacks and SYN floods, are infrastructure layer attacks. An attacker can use either of these methods to generate large volumes of traffic that can inundate the capacity of a network or tie up resources on systems like a server, firewall, IPS, or load balancer. While these attacks can be easy to identify, to effectively mitigate them, you must have a network or systems that scale up capacity more rapidly than the inbound traffic flood.
 
-### Application Layer Attacks
+#### Application Layer Attacks
 
 An attacker may target the application itself by using a layer 7 or application layer attack. In these attacks, similar to SYN flood infrastructure attacks, the attacker attempts to overload specific functions of an application to make the application unavailable or extremely unresponsive to legitimate users. 
 
 You can watch the [video](https://www.youtube.com/watch?v=HnoZS5jj7pk&t=3s) below to find out more:
-[Image: image.png]It is important to learn the mitigation techniques for different attacks. You can find this comprehensive documentation containing DDOS Best Practices [here](https://d1.awsstatic.com/whitepapers/Security/DDoS_White_Paper.pdf).
+{{< youtube id="HnoZS5jj7pk" >}}
+It is important to learn the mitigation techniques for different attacks. You can find this comprehensive documentation containing DDOS Best Practices [here](https://d1.awsstatic.com/whitepapers/Security/DDoS_White_Paper.pdf).
 
-## **What is AWS Shield and Why You Should Use It**
+### What is AWS Shield and Why You Should Use It
 
 AWS Shield is a managed Distributed Denial of Service (DDoS) protection service that safeguards applications running on AWS. AWS Shield provides always-on detection and automatic inline mitigations that minimize application downtime and latency, so there is no need to engage AWS Support to benefit from DDoS protection. There are two tiers of AWS Shield - Standard and Advanced.
 
@@ -52,7 +53,7 @@ AWS Shield is a managed Distributed Denial of Service (DDoS) protection service 
 
 You can find out more in this [documentation](https://docs.aws.amazon.com/waf/latest/developerguide/ddos-overview.html).
 
-## **What is AWS WAF and Why You Should Use It**
+### What is AWS WAF and Why You Should Use It
 
 AWS WAF is a web application firewall that helps protect your web applications or APIs against common web exploits that may affect availability, compromise security, or consume excessive resources. 
 
@@ -61,15 +62,15 @@ AWS WAF gives you control over how traffic reaches your applications by enabling
 AWS WAF provides: web traffic filtering with custom rules, malicious request blocking and active monitoring and tuning.
 
 You can watch the [video](https://www.youtube.com/watch?v=2lAcE3NA2UU) below to understand more
-[Image: image.png]
+{{< youtube id="2lAcE3NA2UU" >}}
 
-## ****HANDS-ON LAB TO PROTECT AGAINST DDOS ATTACKS****
+### HANDS-ON LAB TO PROTECT AGAINST DDOS ATTACKS
 
-### Activating AWS Shield Advanced for Your Application (Step-by-step Guide)
+#### Activating AWS Shield Advanced for Your Application (Step-by-step Guide)
 
 This [documentation](https://docs.aws.amazon.com/waf/latest/developerguide/enable-ddos-prem.html) will show you how to activate AWS Shield Advanced
 
-### Protecting against network and host-level attacks with AWS WAF
+#### Protecting against network and host-level attacks with AWS WAF
 
 This [lab](https://wellarchitectedlabs.com/Security/200_CloudFront_with_WAF_Protection/README.html) will show you hot setup AWS WAF and Amazon Cloudfront to protect against network based attacks
 
