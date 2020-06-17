@@ -6,26 +6,25 @@ weight = 2
 
 This chapter discusses DDOS attacks and the AWS services you can use to combat against them. You will also find hands-on labs that you can try at the end of the section before configuring your own system. Let’s begin!
 
-**_**What are expected outcomes?**_**
+### What are expected outcomes?
 
 1. Learn about AWS Shield and WAF
 2. Successfully setup an environment resilient to DDOS attacks
 
-**_**Pre-requisites**_**
+### Pre-requisites
 
 1. None
 
-## ****What is a DDOS Attack****
+### What is a DDOS Attack
 
 A Denial of Service (DoS) attack is a malicious attempt to affect the availability of a targeted system, such as a website or application, to legitimate end users. Typically, attackers generate large volumes of packets or requests ultimately overwhelming the target system. In case of a Distributed Denial of Service (DDoS) attack, and the attacker uses multiple compromised or controlled sources to generate the attack.
 
 You can find more information [here](https://aws.amazon.com/shield/ddos-attack-protection/).
 
 To understand how you can protect yourself from DDOS attacks, you can watch the [video](https://www.youtube.com/watch?v=d0EE1HuZSEU) below for an overview.
-[Image: image.png]
+{{< youtube id="d0EE1HuZSEU" >}}
 
-
-## ****Best Practices for DDOS Resiliency****
+### Best Practices for DDOS Resiliency
 
 There are different types of attacks and AWS provides different services for each of them.
 [Image: image.png]
