@@ -6,7 +6,7 @@ weight = 1
 
 This section presents a process in analyzing and optimizing your AWS costs. This guide walks you through steps to review your AWS bill, understand the top services that have highest costs, and identify immediate actions to reduce those costs.
 
-### What are expected outcomes?
+### What are the expected outcomes?
 
 1. Immediate actions that can reduce your AWS costs.
 2. Understand the process and able to repeat the process frequently.
