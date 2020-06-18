@@ -1,10 +1,10 @@
 +++
-title = "Baseline for Identity Access Management"
+title = "Identity Access Management"
 date =  2020-06-13T05:13:08+08:00
 weight = 1
 +++
 
-This section will give you an introduction to AWS Identity Access Management and and a step-by-step guide to setting it up.
+This section will give you an introduction to AWS Identity Access Management and and a step-by-step guide to setting it up. You will also find hands-on labs that you can try at the end of the section before configuring your own system. Let’s begin!
 
 ### What are the expected outcomes?
 
@@ -22,7 +22,7 @@ AWS Identity and Access Management (IAM) is a web service that helps you securel
 
 You can watch the video below to have a quick overview of IAM
 
-[(https://www.youtube.com/watch?v=Ul6FW4UANGc)](https://www.youtube.com/watch?v=Ul6FW4UANGc)
+(https://www.youtube.com/watch?v=Ul6FW4UANGc)
 {{< youtube id="Ul6FW4UANGc" >}}
 
 
@@ -62,7 +62,7 @@ For extra security, we recommend that you require multi-factor authentication (M
 You can find a comprehensive list in this [documentation]
 (https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
 
-## Setting up AWS IAM
+## Setting Up AWS IAM
 
 Setting IAM is quick and easy as you will see in the video below
 

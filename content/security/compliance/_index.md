@@ -6,7 +6,7 @@ weight = 2
 
 This section discusses AWS services such as Atlas and Artifact that you can use to stay compliant. You will also find hands-on labs that you can try at the end of the section before configuring your own system. Let’s begin!
 
-### What are expected outcomes?
+### What are the expected outcomes?
 
 1. Understand the services you can leverage on to stay compliant
 

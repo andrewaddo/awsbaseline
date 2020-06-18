@@ -6,7 +6,7 @@ weight = 2
 
 This section discusses DDOS attacks and the AWS services you can use to combat against them. You will also find hands-on labs that you can try at the end of the section before configuring your own system. Let’s begin!
 
-### What are expected outcomes?
+### What are the expected outcomes?
 
 1. Learn about AWS Shield and WAF.
 2. Successfully setup an environment resilient to DDOS attacks.
@@ -64,7 +64,7 @@ AWS WAF provides: web traffic filtering with custom rules, malicious request blo
 You can watch the [video](https://www.youtube.com/watch?v=2lAcE3NA2UU) below to understand more
 {{< youtube id="2lAcE3NA2UU" >}}
 
-### HANDS-ON LAB TO PROTECT AGAINST DDOS ATTACKS
+### Setting Up Against DDOS Attacks
 
 #### Protecting against network and host-level attacks with AWS WAF
 
