@@ -23,6 +23,7 @@ AWS Identity and Access Management (IAM) is a web service that helps you securel
 You can watch the video below to have a quick over of IAM
 
 [![Set up AWS IAM](https://www.youtube.com/watch?v=Ul6FW4UANGc)](https://www.youtube.com/watch?v=Ul6FW4UANGc)
+{{< youtube id="Ul6FW4UANGc" >}}
 
 
 ### Here are the Benefits of AWS IAM
