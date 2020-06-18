@@ -38,26 +38,26 @@ You can find more details in this [documentation](https://docs.aws.amazon.com/or
 
 This [documentation] (https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html#intro-video) will provide you the comprehensive list of features and benefits of IAM
 
- ## Best Practices for AWS IAM Setup
+## Best Practices for AWS IAM Setup
 
  These are the list of setup configurations that you must have to ensure a secure environment
 
-* **Root Account Protection**
+**Root Account Protection**
 
 You use an access key (an access key ID and secret access key) to make programmatic requests to AWS. However, do not use your AWS account root user access key. The access key for your AWS account root user gives full access to all your resources for all AWS services, including your billing information. You cannot reduce the permissions associated with your AWS account root user access key.
 Therefore, protect your root user access key like you would your credit card numbers or any other sensitive secret.
 
-* **Least Privilege**
+**Least Privilege**
 
 When you create IAM policies, follow the standard security advice of granting least privilege, or granting only the permissions required to perform a task. Determine what users (and roles) need to do and then craft policies that allow them to perform only those tasks.
 
 Start with a minimum set of permissions and grant additional permissions as necessary. Doing so is more secure than starting with permissions that are too lenient and then trying to tighten them later.
 
-* **User Permissions on Groups**
+**User Permissions on Groups**
 
 Instead of defining permissions for individual IAM users, it's usually more convenient to create groups that relate to job functions (administrators, developers, accounting, etc.). Next, define the relevant permissions for each group. Finally, assign IAM users to those groups. All the users in an IAM group inherit the permissions assigned to the group. That way, you can make changes for everyone in a group in just one place. As people move around in your company, you can simply change what IAM group their IAM user belongs to.
 
-* **Enable MFA**
+**Enable MFA**
 
 For extra security, we recommend that you require multi-factor authentication (MFA) for all users in your account. With MFA, users have a device that generates a response to an authentication challenge. Both the user's credentials and the device-generated response are required to complete the sign-in process. If a user's password or access keys are compromised, your account resources are still secure because of the additional authentication requirement.
 
