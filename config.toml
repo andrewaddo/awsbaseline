@@ -10,7 +10,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 [params]
   themeVariant = "workshop"
-  editURL = "https://github.com/andrewaddo/awsbaseline/tree/master/content"
+  editURL = "https://github.com/andrewaddo/awsbaseline/tree/master/content/"
   description = "AWS Baseline"
   author = "Andrew Do"
   showVisitedLinks = true
