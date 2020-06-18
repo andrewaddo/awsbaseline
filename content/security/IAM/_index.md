@@ -16,13 +16,13 @@ This section will give you an introduction to AWS Identity Access Management and
 
 1. None
 
-## What is IAM and Why You Should Set it Up
+## What is IAM
 
 AWS Identity and Access Management (IAM) is a web service that helps you securely control access to AWS resources. You use IAM to control who is authenticated (signed in) and authorized (has permissions) to use resources.
 
 You can watch the video below to have a quick over of IAM
 
-[![Set up AWS IAM](https://www.youtube.com/watch?v=Ul6FW4UANGc)](https://www.youtube.com/watch?v=Ul6FW4UANGc)
+[(https://www.youtube.com/watch?v=Ul6FW4UANGc)](https://www.youtube.com/watch?v=Ul6FW4UANGc)
 {{< youtube id="Ul6FW4UANGc" >}}
 
 
@@ -34,13 +34,11 @@ You can watch the video below to have a quick over of IAM
 
 * **Multi-factor authentication (MFA)**: You can add two-factor authentication to your account and to individual users for extra security. With MFA you or your users must provide not only a password or access key to work with your account, but also a code from a specially configured device.
 
-You can find more details in this [documentation](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html).
-
 This [documentation] (https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html#intro-video) will provide you the comprehensive list of features and benefits of IAM
 
 ## Best Practices for AWS IAM Setup
 
- These are the list of setup configurations that you must have to ensure a secure environment
+These are the list of setup configurations that you must have to ensure a secure environment
 
 **Root Account Protection**
 
@@ -66,7 +64,10 @@ You can find a comprehensive list in this [documentation]
 
 ## Setting up AWS IAM
 
-Setting IAM is quick and easy as you will see in the [video] (https://aws.amazon.com/premiumsupport/knowledge-center/create-new-iam-user/) here.
+Setting IAM is quick and easy as you will see in the video below
+
+[(https://www.youtube.com/watch?v=wRzzBb18qUw)](https://www.youtube.com/watch?v=wRzzBb18qUw)
+{{< youtube id="wRzzBb18qUw" >}}
 
 ### Creating a new AWS Account 
 
