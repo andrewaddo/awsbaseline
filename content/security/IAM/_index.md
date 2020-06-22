@@ -22,7 +22,6 @@ AWS Identity and Access Management (IAM) is a web service that helps you securel
 
 You can watch the video below to have a quick overview of IAM
 
-(https://www.youtube.com/watch?v=Ul6FW4UANGc)
 {{< youtube id="Ul6FW4UANGc" >}}
 
 
@@ -34,11 +33,13 @@ You can watch the video below to have a quick overview of IAM
 
 * **Multi-factor authentication (MFA)**: You can add two-factor authentication to your account and to individual users for extra security. With MFA you or your users must provide not only a password or access key to work with your account, but also a code from a specially configured device.
 
-This [documentation] (https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html#intro-video) will provide you the comprehensive list of features and benefits of IAM
+There are more benefits to using IAM and you can find them in this [documentation] (https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html#intro-video).
 
 ## Best Practices for AWS IAM Setup
 
-These are the list of setup configurations that you must have to ensure a secure environment
+It is important to ensure that your environment is secure and only the right users have the right access.
+
+These are some of the list of setup configurations that you must have to ensure a secure environment
 
 **Root Account Protection**
 
@@ -60,13 +61,14 @@ Instead of defining permissions for individual IAM users, it's usually more conv
 For extra security, we recommend that you require multi-factor authentication (MFA) for all users in your account. With MFA, users have a device that generates a response to an authentication challenge. Both the user's credentials and the device-generated response are required to complete the sign-in process. If a user's password or access keys are compromised, your account resources are still secure because of the additional authentication requirement.
 
 You can find a comprehensive list in this [documentation]
-(https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
+(https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) and we recommend that you enforce them.
 
 ## Setting Up AWS IAM
 
-Setting IAM is quick and easy as you will see in the video below
+Now that you have a better understanding of the concepts, let us set it up! 
 
-[(https://www.youtube.com/watch?v=wRzzBb18qUw)](https://www.youtube.com/watch?v=wRzzBb18qUw)
+Setting IAM is quick and easy as you will see in the video below:
+
 {{< youtube id="wRzzBb18qUw" >}}
 
 ### Creating a new AWS Account 
