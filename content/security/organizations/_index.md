@@ -4,12 +4,12 @@ date =  2020-06-13T05:13:08+08:00
 weight = 1
 +++
 
-This section will give you an introduction to AWS Organizations and and a step-by-step guide to setting it up.
+This section will give you an introduction to AWS Organizations and and a step-by-step guide to setting it up. You will also find hands-on labs that you can try at the end of the section before configuring your own system. Let’s begin!
 
 ### What are expected outcomes?
 
-1. Understand the concept of AWS Organizations.
-2. Successfully set up an organization with multiple AWS accounts in AWS.
+1. Understand the concept of AWS Organizations
+2. Successfully set up an organization with multiple AWS accounts in AWS
 
 ### Pre-requisites
 
@@ -21,27 +21,18 @@ AWS Organizations is an account management service that enables you to consolida
 
 **Pricing**: AWS Organizations is offered at no additional charge. You are charged only for AWS resources that users and roles in your member accounts use.
 
+You can find a comprehensive list of benefits though this documentation [here] (https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html)
+
 For common customer setup, the master account creates the organization and invites other existing accounts (member accounts such as DEV, TEST, PROD etc) to the organization. You can visualize this setup below:
 ![Basic organization setup](../img/AWSOrganization_basicSetup.png)
-You can also find some key concepts [here](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_getting-started_concepts.html).
 
-### Here are the benefits of AWS Orgnizations
-
-* **Centralized management of all of your AWS accounts**: You can combine your existing accounts into an organization that enables you to manage the accounts centrally. This is especially useful for companies who has multiple business or wish to create multiple accounts for multiple use cases (i.e. test environment, production environment etc)
-
-* **Consolidated billing for all member accounts**: You can use the master account of your organization to consolidate and pay for all member accounts. In consolidated billing, master accounts can also access the billing information, account information, and account activity of member accounts in their organization.
-
-* **Hierarchical grouping of your accounts to meet your budgetary, security, or compliance needs**: You can group your accounts into organizational units (OUs) and attach different access policies to each OU.
-
-* **Control over the AWS services and API actions that each account can access**: As an administrator of the master account of an organization, you can use service control policies (SCPs) to specify the maximum permissions for member accounts in the organization.
-
-You can find more details in this [documentation](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html).
+If you are very new to AWS, I recommend reading this documentation to understand key terminologies [here](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_getting-started_concepts.html).
 
 ## Setting up AWS Organization
 
 {{< youtube id="mScBPL8VV48" >}}
 
-In this [guide](https://aws.amazon.com/premiumsupport/knowledge-center/get-started-organizations/), you create your organization and configure it with two AWS member accounts. You create one of the member accounts in your organization, and you invite the other account to join your organization. Next, you use the [allow list](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_getting-started_concepts.html#allowlist) technique to specify that account administrators can delegate only explicitly listed services and actions. 
+In this [guide](https://aws.amazon.com/premiumsupport/knowledge-center/get-started-organizations/), you can create your organization and configure it with two AWS member accounts. You create one of the member accounts in your organization, and you invite the other account to join your organization. Next, you use the [allow list](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_getting-started_concepts.html#allowlist) technique to specify that account administrators can delegate only explicitly listed services and actions. 
 
 This allows administrators to validate any new service that AWS introduces before they permit its use by anyone else in your company. That way, if AWS introduces a new service, it remains prohibited until an administrator adds the service to the allow list in the appropriate policy. The tutorial also shows you how to use a [deny list](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_getting-started_concepts.html#denylist) to ensure that no users in a member account can change the configuration for the auditing logs that AWS CloudTrail creates.
 
