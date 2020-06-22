@@ -28,6 +28,20 @@ AWS Artifact is a service that allows you to download AWS security compliance re
 You can watch the [video](https://www.youtube.com/watch?v=ILEoLqpbfXM) below to understand more
 {{< youtube id="ILEoLqpbfXM" >}}
 
+### Maintain Compliance with AWS Config
+
+AWS Config is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources. Config continuously monitors and records your AWS resource configurations and allows you to automate the evaluation of recorded configurations against desired configurations. 
+
+You can watch the video below to understand more
+
+{{< youtube id="X_fznJtSyV8" >}}
+
+You can find more information about AWS Config [here] (https://aws.amazon.com/config/)
+
 ### Setting Up AWS Artifact
 
 This [tutorial] (https://docs.aws.amazon.com/artifact/latest/ug/getting-started.html#create-iam-policy) will show you how to setup IAM permissions to download report and agreement using AWS Artifact
+
+### Setting Up AWS Config
+
+This [tutorial] (https://docs.aws.amazon.com/config/latest/developerguide/getting-started.html) will show you multiple ways to setup AWS Config and AWS Config Rules.

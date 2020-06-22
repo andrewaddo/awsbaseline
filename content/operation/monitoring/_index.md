@@ -52,3 +52,13 @@ This [lab] (https://aws.amazon.com/premiumsupport/knowledge-center/iam-cloudwatc
 ### Setting Enhanced Monitoring for Your RDS Application 
 
 This [documentation] (https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Monitoring.OS.html) will show you how to enable Enhanced Monitoring for your DB instance
+
+## Diving Deep: Additional Resources
+
+### Understanding Cloudwatch Logs
+
+This is [course] (https://www.aws.training/Details/Video?id=16391) intoduces Amazon CloudWatch Logs, share common use cases, and demonstrate the service.
+
+### Understanding CloudTrail
+
+This is [course] (https://www.aws.training/Details/Video?id=16453) intoduces Amazon CloudWatch Logs, benefits, and demonstrate the service.

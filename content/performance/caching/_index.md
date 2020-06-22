@@ -60,3 +60,9 @@ This video tutorial will help you accelerate access of static content from Amazo
 
 (https://www.youtube.com/watch?v=DiIaoIcoKNY)
 {{< youtube id="DiIaoIcoKNY" >}}
+
+## Diving Deep: Additional Resources
+
+**Ensuring Cloudfront serve updated content from S3**
+
+You can find the information and resolution in this [guideline] (https://aws.amazon.com/premiumsupport/knowledge-center/cloudfront-serving-outdated-content-s3/)

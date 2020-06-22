@@ -76,3 +76,9 @@ This [documentation] (https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USE
 #### Restoring Data from DB Snapshot of Relational Database Service
 
 This [documentation] (https://aws.amazon.com/premiumsupport/knowledge-center/restore-rds-instance-from-snapshot/) provide the steps to restore data from both manual and automatic DB snapshots. 
+
+## Diving Deep: Additional Resources
+
+**Doing native backup with SQL Server in AWS**
+
+You can find the information and resolution in this [guideline] (https://aws.amazon.com/premiumsupport/knowledge-center/route-53-create-alias-records/)

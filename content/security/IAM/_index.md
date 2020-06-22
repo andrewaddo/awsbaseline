@@ -86,3 +86,7 @@ This [tutorial] (https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_manag
 ### Configuring Credential and MFA 
 
 This [tutorial] (https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_users-self-manage-mfa-and-creds.html) will help you access AWS services with MFA
+
+### Authenticating and Authorizing with IAM
+
+This comprehensive [training] (https://www.aws.training/Details/Video?id=16484) will introduce you to IAM and discuss how the service helps you manage permissions to your AWS services. It will also cover policy documents and IAM identities.
