@@ -7,7 +7,9 @@ weight = 5
 ## Introduction
 
 The goal of the minimum security baseline is to ensure key AWS Security Services and configuration settings are being enabled and leveraged. Many of the controls below can be applied at an AWS account level or "platform" level.
-AWS Service specific security controls (Redshift, EMR, S3, RDS for example) should also be considered as part of your archiecture design review. [Review the AWS Security Documentation for service specific configurations.](https://docs.aws.amazon.com/security/)
+AWS Service specific security controls (Redshift, EMR, S3, RDS for example) should also be considered as part of your archiecture design review. 
+
+[Review the AWS Security Documentation for service specific configurations.](https://docs.aws.amazon.com/security/)
 
 ## Asset Management
 
