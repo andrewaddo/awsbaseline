@@ -26,20 +26,10 @@ To understand how you can protect yourself from DDOS attacks, you can watch the 
 
 ### Best Practices for DDOS Resiliency
 
-There are different types of attacks and AWS provides different services for each of them.
-![types of threat](../img/DDOS_TypesOfThreat.png "types of threat")
-
-#### Infrastructure Layer Attacks
-
-The most common DDoS attacks, UDP reflection attacks and SYN floods, are infrastructure layer attacks. An attacker can use either of these methods to generate large volumes of traffic that can inundate the capacity of a network or tie up resources on systems like a server, firewall, IPS, or load balancer. While these attacks can be easy to identify, to effectively mitigate them, you must have a network or systems that scale up capacity more rapidly than the inbound traffic flood.
-
-#### Application Layer Attacks
-
-An attacker may target the application itself by using a layer 7 or application layer attack. In these attacks, similar to SYN flood infrastructure attacks, the attacker attempts to overload specific functions of an application to make the application unavailable or extremely unresponsive to legitimate users.
+It is important to learn the mitigation techniques for different attacks. You can find this comprehensive documentation containing DDOS Best Practices [here](https://d1.awsstatic.com/whitepapers/Security/DDoS_White_Paper.pdf) - or watch the video below:
 
 You can watch the [video](https://www.youtube.com/watch?v=HnoZS5jj7pk&t=3s) below to find out more:
 {{< youtube id="HnoZS5jj7pk" >}}
-It is important to learn the mitigation techniques for different attacks. You can find this comprehensive documentation containing DDOS Best Practices [here](https://d1.awsstatic.com/whitepapers/Security/DDoS_White_Paper.pdf).
 
 ### What is AWS Shield and Why You Should Use It
 
