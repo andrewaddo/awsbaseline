@@ -31,7 +31,7 @@ You can watch the video below for a quick overview of Amazon Cloudwatch.
 
 It is important that you decide what additional metrics are important to your business for monitoring.
 
-You can find the baseline metrics to monitor for [EC2] (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring_ec2.html), [Application Load Balancer] (http://monitor%20your%20application%20load%20balancer%20with%20amazon%20cloudwatch/) and [RDS] (https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.LoggingAndMonitoring.html).
+You can find the baseline metrics to monitor for [EC2] (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring_ec2.html), [ALB](http://monitor%20your%20application%20load%20balancer%20with%20amazon%20cloudwatch/) (Application Load Balancer) and [RDS] (https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.LoggingAndMonitoring.html).
 
 
 ## Setting Up Resource Monitoring
@@ -57,7 +57,7 @@ This [documentation] (https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USE
 
 ### Understanding Cloudwatch Logs
 
-This is [course] (https://www.aws.training/Details/Video?id=16391) intoduces Amazon CloudWatch Logs, share common use cases, and demonstrate the service.
+This [course] (https://www.aws.training/Details/Video?id=16391) intoduces Amazon CloudWatch Logs, share common use cases, and demonstrate the service.
 
 ### Understanding CloudTrail
 
