@@ -21,9 +21,9 @@ Elasticache is a web service that makes it easy to set up, manage, and scale a d
 
 ElastiCache works with other Amazon Web Services (such as Amazon EC2, CloudWatch, and Amazon SNS) to provide a secure, high-performance and managed in-memory caching.
 
-To start, watch the video below video that discusses Elasticache, use cases, caching strategies and best practices.
+To start, watch the [video] (https://www.youtube.com/watch?v=QxcB53mL_oA&t=159s) below video that discusses Elasticache, use cases, caching strategies and best practices.
 
-(https://www.youtube.com/watch?v=QxcB53mL_oA&t=159s)
+
 {{< youtube id="QxcB53mL_oA&t=159s" >}}
 
 
@@ -31,9 +31,9 @@ To start, watch the video below video that discusses Elasticache, use cases, cac
 
 Amazon CloudFront is a web service that speeds up distribution of your static and dynamic web content (such as .html, .css, .js, and image files) to your users. CloudFront delivers your content through a worldwide network of data centers called edge locations. 
 
-You can watch the video below to have a quick overview of Cloudfront.
+You can watch the [video] (https://www.youtube.com/watch?v=AT-nHW3_SVI) below to have a quick overview of Cloudfront.
 
-(https://www.youtube.com/watch?v=AT-nHW3_SVI)
+
 {{< youtube id="AT-nHW3_SVI" >}}
 
 CloudFront speeds up the distribution of your content by routing each user request through the AWS backbone network to the edge location that can best serve your content. Typically, this is a CloudFront edge server that provides the fastest delivery to the viewer. 
@@ -56,13 +56,11 @@ This [lab] (https://wellarchitectedlabs.com/security/100_labs/100_cloudfront_wit
 
 ### Creating a Cloudfront Distribution for Amazon S3
 
-This video tutorial will help you accelerate access of static content from Amazon S3 using Amazon Cloudfront.
+This [video] (https://www.youtube.com/watch?v=DiIaoIcoKNY) tutorial will help you accelerate access of static content from Amazon S3 using Amazon Cloudfront.
 
-(https://www.youtube.com/watch?v=DiIaoIcoKNY)
 {{< youtube id="DiIaoIcoKNY" >}}
 
 ## Diving Deep: Additional Resources
 
 **Ensuring Cloudfront serve updated content from S3**
-
 You can find the information and resolution in this [guideline] (https://aws.amazon.com/premiumsupport/knowledge-center/cloudfront-serving-outdated-content-s3/)
