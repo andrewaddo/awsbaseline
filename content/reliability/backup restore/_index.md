@@ -20,7 +20,7 @@ This chapter discuss the importance of backup and restore, along with the baseli
 
 AWS offer the most storage services, data-transfer methods, and networking options to build solutions that protect your data with unmatched durability and security.
 
-For an overview, watch this [video] (https://aws.amazon.com/backup-restore/)/
+For an overview, watch this quick [video] (https://aws.amazon.com/backup-restore/) to understand why you should backup and restore with AWS.
 
 Here are some of the reasons to backup with AWS:
 
@@ -28,18 +28,15 @@ Here are some of the reasons to backup with AWS:
 * **Flexibility & scalability**: With AWS, you no longer need to wait weeks-to-months to procure tapes, disks, and other IT resources to increase your storage infrastructure. This ability to scale on demand can improve operational flexibility, innovation, and business agility.
 * **Cost efficiency**: Spend efficiently with pay-as-you-go pricing, cost-management tools, data lifecycle policies, and the EFS and S3 Storage Classes. With these capabilities, you can cost-effectively protect data in the cloud without sacrificing performance. 
 
-You can find out more [here] (https://aws.amazon.com/backup-restore/).
-
 
 ### Baseline Requirement for Backup and Restore in AWS
 
 Setting up backup and restore is done according to the needs of internal stakeholders, regulators and integrating partner’s. This section provides an overview of backup, restore and disaster recovery in AWS, along with a comprehensive list of requirements that you must consider before configuring your architecture.
 
 You can watch the video  below to understand more.
-
-(https://www.youtube.com/watch?v=cBh_Tlg-2yM&list=PLhr1KZpdzukf2K67aldy_A1pAC-SkpPWz&index=8&t=0s)
 {{< youtube id="cBh_Tlg-2yM&list=PLhr1KZpdzukf2K67aldy_A1pAC-SkpPWz&index=8&t=0s" >}}
 
+Setting up backup and retore depend on the requirements from regulatory bodies, partners and internal requirements which we will discuss below.
 
 #### Internal Requirements
 <>
