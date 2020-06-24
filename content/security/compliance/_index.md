@@ -18,7 +18,7 @@ This section discusses AWS services such as Atlas and Artifact that you can use 
 
 AWS Compliance Center offers you a central location to research cloud-related regulatory requirements and how they impact your industry. AWS has customers throughout the world and is continually adapting to evolving regulations, so please contact us if your country of interest is not listed in the drop-down menu and you would like more information about AWS
 
-You can find out more in the [Atlas] website (https://www.atlas.aws/)
+You can find out more in the **Atlas** [website] (https://www.atlas.aws/)
 
 
 ### Enforce Compliance in Your Application with AWS Artifact
@@ -32,7 +32,7 @@ You can watch the [video](https://www.youtube.com/watch?v=ILEoLqpbfXM) below to 
 
 AWS Config is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources. Config continuously monitors and records your AWS resource configurations and allows you to automate the evaluation of recorded configurations against desired configurations. 
 
-You can watch the video below to understand more
+You can watch the video below to understand more:
 
 {{< youtube id="X_fznJtSyV8" >}}
 
