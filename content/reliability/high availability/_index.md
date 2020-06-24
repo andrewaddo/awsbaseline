@@ -22,9 +22,8 @@ Highly available systems are reliable and continue to operate even when critical
 
 We’ll show how AWS can help you achieve high availability for cloud workloads, across compute, SQL databases and storage services
 
-To start, you can find the video below that discusses the best practices in building a highly available and fault tolerant system. You will learn about Designing for Failure, Multi-AZ, Scaling, Self-healing and Loose Coupling.
+To start, you can find the [video] (https://www.youtube.com/watch?v=6uE2XULbT3o) below that discusses the best practices in building a highly available and fault tolerant system. You will learn about Designing for Failure, Multi-AZ, Scaling, Self-healing and Loose Coupling.
 
-(https://www.youtube.com/watch?v=6uE2XULbT3o)
 {{< youtube id="6uE2XULbT3o" >}}
 
 ## Baseline Requirement for High Availability
@@ -58,9 +57,8 @@ This [tutorial] (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-increas
 
 The Multi-AZ feature of Amazon RDS operates two databases in multiple Availability Zones with synchronous replication, thus creating a highly available environment with automatic failover.
 
-To start, you can watch the video below that discusses Amazon RDS and how to configure it.
+To start, you can watch the [video] (https://www.youtube.com/watch?v=uiiS1h4PSI8) below that discusses Amazon RDS and how to configure it.
 
-(https://www.youtube.com/watch?v=uiiS1h4PSI8)
 {{< youtube id="uiiS1h4PSI8" >}}
 
 This [documentation] (https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html) will help you create a highly available and failover ready RDS environment using Multi-AZ deployments. 
