@@ -29,7 +29,7 @@ that’s required of engineering and operations, and the services that are
 appropriate to use to deliver the application will vary. Costs can be considerable
 to achieve the highest levels of availability. 
 
-As you go through this section, it is importnt to take a step back and discuss what your availability goals will be like.
+As you go through this section, it is important to take a step back and discuss what your availability goals will be like.
 
 **Design Principles for Availability**
 
