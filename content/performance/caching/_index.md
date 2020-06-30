@@ -17,9 +17,9 @@ This section discusses the importance of using Elasticache and Cloudfront to imp
 
 ## What is Elasticache
 
-Elasticache is a web service that makes it easy to set up, manage, and scale a distributed in-memory cache environment in the cloud. Elasticache provides a high-performance, resizable, and cost-effective caching solution, while removing the complexity associated with deploying and managing a distributed cache environment.
+[Elasticache] (https://aws.amazon.com/elasticache/) is a web service that makes it easy to set up, manage, and scale a distributed in-memory cache environment in the cloud. Elasticache provides a high-performance, resizable, and cost-effective caching solution, while removing the complexity associated with deploying and managing a distributed cache environment.
 
-ElastiCache works with other Amazon Web Services (such as Amazon EC2, CloudWatch, and Amazon SNS) to provide a secure, high-performance and managed in-memory caching.
+ElastiCache works with other Amazon Web Services (such as [Amazon EC2] (https://aws.amazon.com/ec2/), [CloudWatch] (https://aws.amazon.com/cloudwatch/), and [Amazon SNS] (https://aws.amazon.com/sns/)) to provide a secure, high-performance and managed in-memory caching.
 
 To start, watch the [video] (https://www.youtube.com/watch?v=QxcB53mL_oA&t=159s) below video that discusses Elasticache, use cases, caching strategies and best practices.
 
@@ -29,7 +29,7 @@ To start, watch the [video] (https://www.youtube.com/watch?v=QxcB53mL_oA&t=159s)
 
 ### What is Cloudfront 
 
-Amazon CloudFront is a web service that speeds up distribution of your static and dynamic web content (such as .html, .css, .js, and image files) to your users. CloudFront delivers your content through a worldwide network of data centers called edge locations. 
+[Amazon CloudFront] (https://aws.amazon.com/cloudfront/) is a web service that speeds up distribution of your static and dynamic web content (such as .html, .css, .js, and image files) to your users. CloudFront delivers your content through a worldwide network of data centers called edge locations. 
 
 You can watch the [video] (https://www.youtube.com/watch?v=AT-nHW3_SVI) below to have a quick overview of Cloudfront.
 

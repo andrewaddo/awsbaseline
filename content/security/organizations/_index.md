@@ -65,3 +65,5 @@ You can watch the video here to learn more about AWS Landing Zone.
 ### Control Tower
 
 [AWS Control Tower](https://aws.amazon.com/controltower/) provides the easiest way to set up and govern a new, secure, multi-account AWS environment based on best practices established through AWS’ experience working with thousands of enterprises as they move to the cloud. With AWS Control Tower, builders can provision new AWS accounts in a few clicks, while you have peace of mind knowing your accounts conform to your company-wide policies. Please refer to this [page](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/) for updated availability of Control Tower across regions.
+
+These [labs] (https://controltower.aws-management.tools/) will help you setup account factories, deploys additional services and manage lifecycle events.
