@@ -38,8 +38,7 @@ When designing your  architecture, it is best to keep in mind below general best
 ***Fault Isolation Zones***
 
 Increasing a system’s availability beyond the availability of individual
-components is to make use of multiple independent components in parallel (i.e. multi-AZ, [cross-Region] (https://aws.amazon.com/s3/features/replication/) replication for Amazon S3 and the ability to copy various snapshots and Amazon Machine
-Images (AMIs) to other Regions)
+components is to make use of multiple independent components in parallel (i.e. multi-AZ, [cross-Region] (https://aws.amazon.com/s3/features/replication/) replication for Amazon S3 and the ability to copy various [snapshots] (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-copy-snapshot.html) and Amazon Machine Images [(AMIs)] (https://aws.amazon.com/premiumsupport/knowledge-center/copy-ami-region/) to other Regions)
 
 You can watch the video below to understand more about Amazon S3 Cross-Regional Replication
 {{< youtube id="kAaPjE9-a2A" >}}
