@@ -79,7 +79,7 @@ You can watch the video below to have an overview of AWS Backup
 
 {{< youtube id="QDiXzFx2iMU&t=34s" >}}
 
-### Backing EC2 with EBS Snapshots
+### Backing Up EC2 with EBS Snapshots
 
 Amazon [EBS] (https://aws.amazon.com/ebs/) provides the ability to create snapshots (backups) of any Amazon EBS volume. It takes a copy of the volume and places it in Amazon S3, where it is stored redundantly in multiple Availability Zones. The first snapshot is a full copy of the volume; ongoing snapshots store incremental block-level changes only.
 
