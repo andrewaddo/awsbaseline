@@ -70,7 +70,7 @@ You can watch the video below on how to create Amazon Route 53 Health Checks
 
 {{< youtube id="PnOFP4EZ6hs" >}}
 
-You can watch the video below that shows Skyscanner utilising principles such as fault isolation zone (multi-region), microservices, redundant components to ensure a highly available architecture for their 80M customers globally.
+**Customer Reference**: You can watch the video below that shows Skyscanner utilising principles such as fault isolation zone (multi-region), microservices, redundant components to ensure a highly available architecture for their 80M customers globally.
 
 {{< youtube id="99nNHsbwBpg&t=345s" >}}
 
