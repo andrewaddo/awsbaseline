@@ -15,14 +15,6 @@ This chapter discusses the importance of monitoring your applications with Amazo
 
 1. None
 
-## Monitoring with Amazon Cloudwatch
-
-Monitoring is important in maintaining the reliability, availability, and performance of your AWS solutions. You should collect data from all of the parts in your infrastructure so that you can more easily debug a multi-point failure if one occurs.
-
-As every infrastructure differs, you should create a monitoring plan that should include: goals for monitoring, resources to monitor, frequency of monitoring, tools to use and notifications. After you defined your monitoring goals and created your monitoring plan, the next step is to establish a baseline performance in your environment.
-
-To establish a baseline, you need to understand what metrics you can monitor, and decide within your organization how detailed you want to monitor. You can find the metrics for [EC2] (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/viewing_metrics_with_cloudwatch.html), [ALB] (https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-cloudwatch-metrics.html) and [RDS] (https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MonitoringOverview.html) in the documentations.
-
 ### What is Amazon Cloudwatch
 
 Amazon CloudWatch is a monitoring service for AWS cloud resources and the applications you run on AWS. You can use Amazon CloudWatch to collect and track metrics, collect and monitor log files, set alarms, and automatically react to changes in your AWS resources. 
@@ -31,12 +23,14 @@ You can watch the video below for a quick overview of Amazon Cloudwatch.
 
 {{< youtube id="a4dhoTQCyRA" >}}
 
+
 ## Monitoring with Amazon Cloudwatch
 
-It is important that you decide what additional metrics are important to your business for monitoring.
+Monitoring is important in maintaining the reliability, availability, and performance of your AWS solutions. You should collect data from all of the parts in your infrastructure so that you can more easily debug a multi-point failure if one occurs.
 
-You can find the baseline metrics to monitor for [EC2] (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring_ec2.html), [ALB](http://monitor%20your%20application%20load%20balancer%20with%20amazon%20cloudwatch/) (Application Load Balancer) and [RDS] (https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.LoggingAndMonitoring.html).
+As every infrastructure differs, you should create a monitoring plan that should include: goals for monitoring, resources to monitor, frequency of monitoring, tools to use and notifications. After you defined your monitoring goals and created your monitoring plan, the next step is to establish a baseline performance in your environment.
 
+To establish a baseline, you need to understand what metrics you can monitor, and decide within your organization how detailed you want to monitor. You can find the metrics for [EC2] (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/viewing_metrics_with_cloudwatch.html), [ALB] (https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-cloudwatch-metrics.html) and [RDS] (https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MonitoringOverview.html) in the documentations.
 
 ## Setting Up Resource Monitoring
 
