@@ -66,11 +66,11 @@ This is can be an advance topic for you but if you are interested, you can try t
 ROC suggests focusing on having the right
 mechanisms to detect failures (such as Elastic Load Balancing [ELB] (https://aws.amazon.com/elasticloadbalancing/#:~:text=Elastic%20Load%20Balancing%20automatically%20distributes,or%20across%20multiple%20Availability%20Zones.) or Route53 health checks)
 
-You can watch the video below on how to create Amazon Route 53 Health Check
+You can watch the video below on how to create Amazon Route 53 Health Checks
 
 {{< youtube id="PnOFP4EZ6hs" >}}
 
-You can watch the video below that shows Skyscanner utilising principles such as fault isolation zone (multi-region, microservices, redundant components to ensure a highly available architecture for their 80M customers globally.
+You can watch the video below that shows Skyscanner utilising principles such as fault isolation zone (multi-region), microservices, redundant components to ensure a highly available architecture for their 80M customers globally.
 
 {{< youtube id="99nNHsbwBpg&t=345s" >}}
 
