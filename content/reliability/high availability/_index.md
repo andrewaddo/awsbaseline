@@ -98,9 +98,14 @@ Looks like you are all set! To help you implement, here are some labs that we re
 
 ### Creating a Highly Available EC2 Instance
 
-The Elastic Load Balancer distributes traffic between two or more EC2 instances, each of which can potentially be deployed in a separate subnet that resides in a separate Amazon Availability Zone. These instances can be part of an Auto-Scaling Group, with additional instances launched on demand.
 
-This [tutorial] (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-increase-availability.html) will help you ensure availability and maintain multiple EC2 instances using EC2 Auto Scaling and Elastic Load Balancing.
+As you fill find in the tutorial below, your application can face traffic increase to the point that you require more than one instance to meet the demand. In this case, you can launch multiple EC2 instances from your AMI and then use Elastic Load Balancing [(ELB)] (https://aws.amazon.com/elasticloadbalancing/) to distribute incoming traffic for your application across these EC2 instances. 
+
+This [tutorial] (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-increase-availability.html) will help you ensure availability for your EC3 instances.
+
+If you have the time, you can watch the video below for a step-by-step on creating a highly scalable and available website (i.e. wordpress). 
+
+{{< youtube id="p4ttBpRedFQ" >}}
 
 ### Creating a Highly Available RDS
 
