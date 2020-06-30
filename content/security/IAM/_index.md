@@ -46,6 +46,8 @@ These are some of the list of setup configurations that you must have to ensure 
 You use an access key (an access key ID and secret access key) to make programmatic requests to AWS. However, do not use your AWS account root user access key. The access key for your AWS account root user gives full access to all your resources for all AWS services, including your billing information. You cannot reduce the permissions associated with your AWS account root user access key.
 Therefore, protect your root user access key like you would your credit card numbers or any other sensitive secret.
 
+You can watch the [video] (https://www.youtube.com/watch?v=ZaxCLDZgZBo&list=PLhr1KZpdzukf2K67aldy_A1pAC-SkpPWz&index=4&t=1s) below for an overview of root accounr protection.
+
 **Least Privilege**
 
 When you create IAM policies, follow the standard security advice of granting least privilege, or granting only the permissions required to perform a task. Determine what users (and roles) need to do and then craft policies that allow them to perform only those tasks.
@@ -62,6 +64,8 @@ For extra security, we recommend that you require multi-factor authentication (M
 
 You can find a comprehensive list in this [documentation]
 (https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) and we recommend that you enforce them.
+
+{{< youtube id="ZaxCLDZgZBo&list=PLhr1KZpdzukf2K67aldy_A1pAC-SkpPWz&index=4&t=1s" >}}
 
 ## Setting Up AWS IAM
 

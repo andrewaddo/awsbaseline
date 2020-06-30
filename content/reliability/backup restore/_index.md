@@ -26,7 +26,7 @@ For an overview, watch this quick [video] (https://aws.amazon.com/backup-restore
 
 Setting up backup and restore is done according to the needs of internal stakeholders, regulators and integrating partner’s. This section provides an overview of backup, restore and disaster recovery in AWS, along with a comprehensive list of requirements that you must consider before configuring your architecture.
 
-You can watch the video  below to understand more.
+You can watch the [video] (https://www.youtube.com/watch?v=cBh_Tlg-2yM&list=PLhr1KZpdzukf2K67aldy_A1pAC-SkpPWz&index=8&t=34s) below to understand more.
 {{< youtube id="cBh_Tlg-2yM&list=PLhr1KZpdzukf2K67aldy_A1pAC-SkpPWz&index=8&t=0s" >}}
 
 Setting up backup and retore depend on the requirements from regulatory bodies, partners and internal requirements which we will discuss below.

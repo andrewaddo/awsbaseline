@@ -62,6 +62,8 @@ As your organization grows, it is important to track changes that occur across y
 You can watch the video here to learn more about AWS Landing Zone.
 {{< youtube id="-u9LK8Dueyc" >}}
 
+You can follow this [lab] (https://kapilpendse.github.io/techshift-accelerator-content/2-Modernize/Lab11-SimpleLandingZone/SimpleLandingZone.html) which deploys a simple landing zone which builds a public and private subnet in the VPC.
+
 ### Control Tower
 
 [AWS Control Tower](https://aws.amazon.com/controltower/) provides the easiest way to set up and govern a new, secure, multi-account AWS environment based on best practices established through AWS’ experience working with thousands of enterprises as they move to the cloud. With AWS Control Tower, builders can provision new AWS accounts in a few clicks, while you have peace of mind knowing your accounts conform to your company-wide policies. Please refer to this [page](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/) for updated availability of Control Tower across regions.
