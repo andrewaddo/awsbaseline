@@ -65,15 +65,17 @@ Watch the seamless integration of AWS Cloudwatch and SNS (Email) in the tutorial
 
 {{< youtube id="YC-sVSbeowA" >}}
 
-Here are some of the baseline alarm setup that you can do:
-    1. Setup [SNS] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/US_SetupSNS.html) Notifications
-    2. Create a CloudWatch Alarm Based on a [Static] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ConsoleAlarms.html) Threshold
-    3. Creating a CloudWatch Alarm Based on [Anomaly] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Create_Anomaly_Detection_Alarm.html) Detection
-    4. Creating a [Billing] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html) Alarm to Monitor Your Estimated AWS Charges
+Here are some of the baseline alarm setups that you can do:
+1. Setup [SNS] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/US_SetupSNS.html) Notifications 
+2. Create a CloudWatch Alarm Based on a [Static] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ConsoleAlarms.html) Threshold
+3. Creating a CloudWatch Alarm Based on [Anomaly] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Create_Anomaly_Detection_Alarm.html) Detection
+4. Creating a [Billing] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html) Alarm to Monitor Your Estimated AWS Charges
 
 If you have the time, we recommend watching the video below showing how BBC used Amazon CloudWatch.
 
 {{< youtube id="uuBuc6OAcVY" >}}
+
+You can check the comprehensive list of ***Customere References*** [here] (https://aws.amazon.com/cloudwatch/customers/) too.
 
 ## Setting Up Resource Monitoring
 
