@@ -33,7 +33,8 @@ to achieve the highest levels of availability.
 
 When designing your  architecture, it is best to keep in mind below general best practices:
 
-1. ***Fault Isolation Zones***
+*Fault Isolation Zones*
+
 Increasing a system’s availability beyond the availability of individual
 components is to make use of multiple independent components in parallel (i.e. multi-AZ, [cross-Region] (https://aws.amazon.com/s3/features/replication/) replication for Amazon S3 and the ability to copy various snapshots and Amazon Machine
 Images (AMIs) to other Regions)
@@ -41,12 +42,12 @@ Images (AMIs) to other Regions)
 Amazon S3 Cross-Regional Replication
 {{< youtube id="kAaPjE9-a2A" >}}
 
-2. ***Redundant components***
-An important design principle is the avoidance of
-single points of failure in underlying physical infrastructure.  Similarly, systems are built to be resilient to failure of
+*Redundant components*
+
+An important design principle is the avoidance of single points of failure in underlying physical infrastructure.  Similarly, systems are built to be resilient to failure of
 a single compute node, single storage volume, or single instance of a database. 
 
-3. ***Microservice architecture***
+*Microservice architecture*
 
 Microservices are an architectural and organizational approach to software development where software is composed of small independent services that communicate over well-defined APIs. These services are owned by small, self-contained teams.
 
@@ -58,7 +59,8 @@ You can watch the video below to understand the difference and evolution from mo
 
 This is can be an advance topic for you but if you are interested, you can try this [module] (https://aws.amazon.com/getting-started/hands-on/break-monolith-app-microservices-ecs-docker-ec2/) which guides you from a monolithic to microservice architecture.
 
-4. ***Recovery Oriented Computing (ROC)***
+*Recovery Oriented Computing (ROC)*
+
 ROC suggests focusing on having the right
 mechanisms to detect failures (such as Elastic Load Balancing [ELB] (https://aws.amazon.com/elasticloadbalancing/#:~:text=Elastic%20Load%20Balancing%20automatically%20distributes,or%20across%20multiple%20Availability%20Zones.) or Route53 health checks)
 
