@@ -17,7 +17,7 @@ This chapter discusses the importance of monitoring your applications with Amazo
 
 ### What is Amazon Cloudwatch
 
-Amazon CloudWatch is a monitoring service for AWS cloud [resources] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/aws-services-cloudwatch-metrics.html) and the applications you run on AWS. You can collect and track [metrics] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/working_with_metrics.html), create [dashboards] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create_dashboard.html), collect and monitor log files, set [alarms] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html), and automatically react to changes in your AWS resources. 
+Amazon CloudWatch is a monitoring service for AWS cloud [resources] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/aws-services-cloudwatch-metrics.html) and the applications you run on AWS. You can collect and track [metrics] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/working_with_metrics.html), create [dashboards] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Dashboards.html), collect and monitor log files, set [alarms] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html), and automatically react to changes in your AWS resources. 
 
 You can watch the video below for a quick overview of Amazon Cloudwatch.
 
@@ -27,13 +27,19 @@ Amazon CloudWatch is essentially a metrics repository. To visualize, an AWS serv
 
 <img src="C:\Users\mariamdn\Desktop\Baseline photos">
 
-## Monitoring with Amazon Cloudwatch
+## Amazon Cloudwatch Metrics
 
 Monitoring is important in maintaining the reliability, availability, and performance of your AWS solutions. You should collect data from all of the parts in your infrastructure so that you can more easily debug a multi-point failure if one occurs.
 
 As every infrastructure differs, you should create a monitoring plan that should include: goals for monitoring, resources to monitor, frequency of monitoring, tools to use and notifications. After you defined your monitoring goals and created your monitoring plan, the next step is to establish a baseline performance in your environment.
 
-To establish a baseline, you need to understand what metrics you can monitor, and decide within your organization how detailed you want to monitor. You can find the metrics for [EC2] (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/viewing_metrics_with_cloudwatch.html), [ALB] (https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-cloudwatch-metrics.html) and [RDS] (https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MonitoringOverview.html) in the documentations.
+To establish a baseline, you need to understand what metrics you can monitor, and decide within your organization how detailed you want to monitor. You can find the detailed metrics for EC2, Application Load Balancer (ALB) and RDS in the documentations:
+
+   1. [EC2] (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/viewing_metrics_with_cloudwatch.html) metrics
+   2. [ALB] (https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-cloudwatch-metrics.html) metrics
+   3. [RDS] (https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MonitoringOverview.html) metrics
+
+AWS Cloudwatch can monitor over 700 metrics from over 80 [services] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/aws-services-cloudwatch-metrics.html). You can choose the metrics and follow the steps [here] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/viewing_metrics_with_cloudwatch.html) to view them all. You can also search within all of the metrics in your account using targeted search terms by following this [guide] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/finding_metrics_with_cloudwatch.html).
 
 ## Setting Up Resource Monitoring
 
