@@ -17,13 +17,13 @@ This chapter discusses the importance of monitoring your applications with Amazo
 
 ### What is Amazon Cloudwatch
 
-Amazon CloudWatch is a monitoring service for AWS cloud resources and the applications you run on AWS. You can use Amazon CloudWatch to collect and track metrics, collect and monitor log files, set alarms, and automatically react to changes in your AWS resources. 
+Amazon CloudWatch is a monitoring service for AWS cloud [resources] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/aws-services-cloudwatch-metrics.html) and the applications you run on AWS. You can collect and track [metrics] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/working_with_metrics.html), create [dashboards] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create_dashboard.html), collect and monitor log files, set [alarms] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html), and automatically react to changes in your AWS resources. 
 
 You can watch the video below for a quick overview of Amazon Cloudwatch.
 
 {{< youtube id="a4dhoTQCyRA" >}}
 
-Amazon CloudWatch is basically a metrics repository. An AWS service—such as Amazon EC2—puts metrics into the repository, and you retrieve statistics based on those metrics. If you put your own custom metrics into the repository, you can retrieve statistics on these metrics as well.
+Amazon CloudWatch is essentially a metrics repository. To visualize, an AWS service—such as Amazon EC2—puts metrics into the repository, and you retrieve statistics based on those metrics. If you put your own custom metrics into the repository, you can retrieve statistics on these metrics as well.
 
 <img src="C:\Users\mariamdn\Desktop\Baseline photos">
 
