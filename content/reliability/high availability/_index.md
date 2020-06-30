@@ -41,7 +41,7 @@ Increasing a system’s availability beyond the availability of individual
 components is to make use of multiple independent components in parallel (i.e. multi-AZ, [cross-Region] (https://aws.amazon.com/s3/features/replication/) replication for Amazon S3 and the ability to copy various snapshots and Amazon Machine
 Images (AMIs) to other Regions)
 
-Amazon S3 Cross-Regional Replication
+You can watch the video below to understand more about Amazon S3 Cross-Regional Replication
 {{< youtube id="kAaPjE9-a2A" >}}
 
 ***Redundant components***
