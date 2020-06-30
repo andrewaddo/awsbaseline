@@ -27,19 +27,53 @@ Amazon CloudWatch is essentially a metrics repository. To visualize, an AWS serv
 
 <img src="C:\Users\mariamdn\Desktop\Baseline photos">
 
-## Amazon Cloudwatch Metrics
+## Monitoring Amazon Cloudwatch 
 
 Monitoring is important in maintaining the reliability, availability, and performance of your AWS solutions. You should collect data from all of the parts in your infrastructure so that you can more easily debug a multi-point failure if one occurs.
 
 As every infrastructure differs, you should create a monitoring plan that should include: goals for monitoring, resources to monitor, frequency of monitoring, tools to use and notifications. After you defined your monitoring goals and created your monitoring plan, the next step is to establish a baseline performance in your environment.
 
+***Amazon Cloudwatch Metrics***
+
 To establish a baseline, you need to understand what metrics you can monitor, and decide within your organization how detailed you want to monitor. You can find the detailed metrics for EC2, Application Load Balancer (ALB) and RDS in the documentations:
 
-   1. [EC2] (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/viewing_metrics_with_cloudwatch.html) metrics
-   2. [ALB] (https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-cloudwatch-metrics.html) metrics
-   3. [RDS] (https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MonitoringOverview.html) metrics
+   1. [EC2] (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/viewing_metrics_with_cloudwatch.html) metrics: including instance (CPU utilization, byte read/write etc) and CPU credits.
+   2. [ALB] (https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-cloudwatch-metrics.html) metrics: including Active connection count, condumed LCUs and healthy host count.
+   3. [RDS] (https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MonitoringOverview.html) metrics: including etwork throughput, client connections, I/O for read, write, or metadata operations, and burst credit balances.
 
 AWS Cloudwatch can monitor over 700 metrics from over 80 [services] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/aws-services-cloudwatch-metrics.html). You can choose the metrics and follow the steps [here] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/viewing_metrics_with_cloudwatch.html) to view them all. You can also search within all of the metrics in your account using targeted search terms by following this [guide] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/finding_metrics_with_cloudwatch.html).
+
+***Amazon Cloudwatch Dashboard***
+
+Once you determine the metrics you want to monitor and the baseline performance you are comfortable with, you can consolidate them in a dashboard for easier tracking. 
+
+Amazon CloudWatch dashboards are customizable home pages in the CloudWatch console that you can use to monitor your resources in a single view, even those resources that are spread across different Regions. You can use CloudWatch dashboards to create customized views of the metrics and alarms for your AWS resources. You can follow this [tutorial] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create_dashboard.html) on how to setup a basic dashboard.
+
+Watch the video below to have a visual understanding to monitor multiple resources at once, view automatic dashboards that can be dynamically filtered, or create your own custom dashboards.
+
+{{< youtube id="I7EFLChc07M" >}}
+
+After creating your dashboard, you can have simple edits such as [adding/removing] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/add_remove_graph_dashboard.html) graphs, [resizing] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/move_resize_graph_dashboard.html) graphs, [editing] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/edit_graph_dashboard.html) graphs and setting up [cross-account] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch_xaxr_dashboard.html) cross-region dashboards.
+
+***Amazon Cloudwatch Alarms***
+
+A CloudWatch Alarm is always in one of three states: OK, ALARM, or INSUFFICIENT_DATA. When the metric is within the range that you have defined as acceptable, the Monitor is in the OK state. When it breaches a threshold it transitions to the ALARM state. If the data needed to make the decision is missing or incomplete, the monitor transitions to the INSUFFICIENT_DATA state.
+
+Alarms watch metrics and execute actions by publishing notifications to Amazon [SNS] (https://aws.amazon.com/sns/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc) topics or by initiating Auto Scaling actions. SNS can deliver notifications using HTTP, HTTPS, Email, or an Amazon [SQS] (https://aws.amazon.com/sqs/) queue. Your application can receive these notifications and then act on them in any desired way.
+
+Watch the seamless integration of AWS Cloudwatch and SNS (Email) in the tutorial below.
+
+{{< youtube id="YC-sVSbeowA" >}}
+
+Here are some of the baseline alarm setup that you can do:
+    1. Setup [SNS] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/US_SetupSNS.html) Notifications
+    2. Create a CloudWatch Alarm Based on a [Static] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ConsoleAlarms.html) Threshold
+    3. Creating a CloudWatch Alarm Based on [Anomaly] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Create_Anomaly_Detection_Alarm.html) Detection
+    4. Creating a [Billing] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html) Alarm to Monitor Your Estimated AWS Charges
+
+If you have the time, we recommend watching the video below showing how BBC used Amazon CloudWatch.
+
+{{< youtube id="uuBuc6OAcVY" >}}
 
 ## Setting Up Resource Monitoring
 
