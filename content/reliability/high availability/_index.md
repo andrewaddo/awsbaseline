@@ -66,6 +66,10 @@ You can watch the video below on how to create Amazon Route 53 Health Check
 
 {{< youtube id="PnOFP4EZ6hs" >}}
 
+You can watch the video below that shows Skyscanner utilising principles such as fault isolation zone (multi-region, microservices, redundant components to ensure a highly available architecture for their 80M customers globally.
+
+{{< youtube id="99nNHsbwBpg&t=345s" >}}
+
 **Setting up a Highly Available Architecture**
 
 To have a visual overview, you can find the [video] (https://www.youtube.com/watch?v=6uE2XULbT3o) below that discusses the best practices in building a highly available and fault tolerant system. You will learn about Designing for Failure, Multi-AZ, Scaling, Self-healing and Loose Coupling.
