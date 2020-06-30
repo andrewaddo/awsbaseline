@@ -20,24 +20,58 @@ This section discusses how AWS can help you achieve high availability for cloud 
 
 Highly available systems are reliable and continue to operate even when critical components fail. They are also resilient and are able to recover from failure with minimum data loss and service disruption.
 
-when designing your  architecture, it is best to keep in mind below general best practices:
-1. Avoiding single points of failure
-2. Placing each component (load balancers,
-app servers, databases) in at least two Availability Zones (AZs)
-3. Maintaining sufficient capacity to absorb AZ / cloud failures (i.e. Reserved Instances to guarantee capacity is available in a separate
-region/cloud)
-4. Replicating data across AZs (via backup or replicate across
-clouds/regions for failover)
-5. Setting up monitoring, alerts and operations to identify and
-automate problem resolution or failover process
-6. Designing stateless applications for resilience to reboot / relaunch
+***Understanding Availability Needs***
+
+Availability goals will differ according to the needs of your business. Availability goals can vary from those applicable to internal tools (for
+example, 99% availability) to those for mission critical workloads (for example,
+99.999% or even higher.) Based on the necessary availability, the level of effort
+that’s required of engineering and operations, and the services that are
+appropriate to use to deliver the application will vary. Costs can be considerable
+to achieve the highest levels of availability. 
+
+***Design Principles for Availability***
+
+When designing your  architecture, it is best to keep in mind below general best practices:
+1. **Fault Isolation Zones**
+Increasing a system’s availability beyond the availability of individual
+components is to make use of multiple independent components in parallel (i.e. multi-AZ, [cross-Region] (https://aws.amazon.com/s3/features/replication/) replication for Amazon S3 and the ability to copy various snapshots and Amazon Machine
+Images (AMIs) to other Regions)
+
+Amazon S3 Cross-Regional Replication
+{{< youtube id="kAaPjE9-a2A" >}}
+
+2. Redundant components
+An important design principle is the avoidance of
+single points of failure in underlying physical infrastructure.  Similarly, systems are built to be resilient to failure of
+a single compute node, single storage volume, or single instance of a database. 
+
+3. Microservice architecture
+
+Microservices are an architectural and organizational approach to software development where software is composed of small independent services that communicate over well-defined APIs. These services are owned by small, self-contained teams.
+
+[Microservices] (https://aws.amazon.com/microservices/) architectures make applications easier to scale and faster to develop, enabling innovation and accelerating time-to-market for new features.
+
+You can watch the video below to understand the difference and evolution from monolithic to microservice architecture
+
+{{< youtube id="Ijs55IA8DIk" >}}
+
+This is can be an advance topic for you but if you are interested, you can try this [module] (https://aws.amazon.com/getting-started/hands-on/break-monolith-app-microservices-ecs-docker-ec2/) which guides you from a monolithic to microservice architecture.
+
+4. Recovery Oriented Computing (ROC)
+ROC suggests focusing on having the right
+mechanisms to detect failures (such as Elastic Load Balancing [ELB] (https://aws.amazon.com/elasticloadbalancing/#:~:text=Elastic%20Load%20Balancing%20automatically%20distributes,or%20across%20multiple%20Availability%20Zones.) or Route53 health checks)
+
+You can watch the video below on how to create Amazon Route 53 Health Check
+
+{{< youtube id="PnOFP4EZ6hs" >}}
+
+***Setting up a Highly Available Architecture***
 
 To have a visual overview, you can find the [video] (https://www.youtube.com/watch?v=6uE2XULbT3o) below that discusses the best practices in building a highly available and fault tolerant system. You will learn about Designing for Failure, Multi-AZ, Scaling, Self-healing and Loose Coupling.
 
 {{< youtube id="6uE2XULbT3o" >}}
 
 ## Baseline Requirement for High Availability
-
 
 Creating a highly available environment is done according to the needs of internal stakeholders, regulators and integrating partner’s. This section provides high availability and multi-AZ in AWS, along with a comprehensive list of requirements that you must consider before configuring your architecture.
 
