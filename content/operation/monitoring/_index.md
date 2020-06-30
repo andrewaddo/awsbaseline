@@ -6,7 +6,7 @@ weight = 1
 
 This chapter discusses the importance of monitoring your applications with Amazon Cloudwatch, and how to set it up. You will find hands-on labs that you can try at the end of the section before configuring your own system. Let’s begin!
 
-### What are expected outcomes?
+### What are the expected outcomes?
 
 1. Understand how to monitor your EC2, Application Load Balancer and RDS with Cloudwatch
 2. Successfully setup Cloudwatch monitoring and health checks
@@ -17,7 +17,11 @@ This chapter discusses the importance of monitoring your applications with Amazo
 
 ## Monitoring with Amazon Cloudwatch
 
-Monitoring is an important part of maintaining the reliability, availability, and performance of your Amazon Elastic Compute Cloud (Amazon EC2) instances and your AWS solutions. You should collect monitoring data from all of the parts in your AWS solutions so that you can more easily debug a multi-point failure if one occurs.
+Monitoring is important in maintaining the reliability, availability, and performance of your AWS solutions. You should collect data from all of the parts in your infrastructure so that you can more easily debug a multi-point failure if one occurs.
+
+As every infrastructure differs, you should create a monitoring plan that should include: goals for monitoring, resources to monitor, frequency of monitoring, tools to use and notifications. After you defined your monitoring goals and created your monitoring plan, the next step is to establish a baseline performance in your environment.
+
+To establish a baseline, you need to understand what metrics you can monitor, and decide within your organization how detailed you want to monitor. You can find the metrics for [EC2] (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/viewing_metrics_with_cloudwatch.html), [ALB] (https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-cloudwatch-metrics.html) and [RDS] (https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MonitoringOverview.html) in the documentations.
 
 ### What is Amazon Cloudwatch
 
