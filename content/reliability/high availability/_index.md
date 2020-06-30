@@ -4,7 +4,7 @@ date =  2020-06-13T05:13:08+08:00
 weight = 1
 +++
 
-This section discusses the importance and various requirements to take into consideration when creating a highly available infrastructure. You will also find hands-on labs that you can try at the end of the section before configuring your own system. Let’s begin!
+This section discusses how AWS can help you achieve high availability for cloud workloads, across compute, SQL databases and storage services. You will also find hands-on labs that you can try at the end of the section before configuring your own system. Let’s begin!
 
 ### What are the expected outcomes?
 
@@ -20,9 +20,19 @@ This section discusses the importance and various requirements to take into cons
 
 Highly available systems are reliable and continue to operate even when critical components fail. They are also resilient and are able to recover from failure with minimum data loss and service disruption.
 
-We’ll show how AWS can help you achieve high availability for cloud workloads, across compute, SQL databases and storage services
+when designing your  architecture, it is best to keep in mind below general best practices:
+1. Avoiding single points of failure
+2. Placing each component (load balancers,
+app servers, databases) in at least two Availability Zones (AZs)
+3. Maintaining sufficient capacity to absorb AZ / cloud failures (i.e. Reserved Instances to guarantee capacity is available in a separate
+region/cloud)
+4. Replicating data across AZs (via backup or replicate across
+clouds/regions for failover)
+5. Setting up monitoring, alerts and operations to identify and
+automate problem resolution or failover process
+6. Designing stateless applications for resilience to reboot / relaunch
 
-To start, you can find the [video] (https://www.youtube.com/watch?v=6uE2XULbT3o) below that discusses the best practices in building a highly available and fault tolerant system. You will learn about Designing for Failure, Multi-AZ, Scaling, Self-healing and Loose Coupling.
+To have a visual overview, you can find the [video] (https://www.youtube.com/watch?v=6uE2XULbT3o) below that discusses the best practices in building a highly available and fault tolerant system. You will learn about Designing for Failure, Multi-AZ, Scaling, Self-healing and Loose Coupling.
 
 {{< youtube id="6uE2XULbT3o" >}}
 
