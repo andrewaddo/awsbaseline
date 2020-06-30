@@ -16,18 +16,11 @@ This chapter discuss the importance of backup and restore, along with the baseli
 
 1. Recovery point objective (RPO) for your application
 
-### Why Backup and Restore with AWS
+### Overview
 
 AWS offer the most storage services, data-transfer methods, and networking options to build solutions that protect your data with unmatched durability and security.
 
 For an overview, watch this quick [video] (https://aws.amazon.com/backup-restore/) to understand why you should backup and restore with AWS.
-
-Here are some of the reasons to backup with AWS:
-
-* **Data Durability**: AWS provides 99.999999999% data durability. Data uploaded to Amazon S3 and Amazon S3 Glacier are created and stored across at least three devices in a single AWS Region.
-* **Flexibility & scalability**: With AWS, you no longer need to wait weeks-to-months to procure tapes, disks, and other IT resources to increase your storage infrastructure. This ability to scale on demand can improve operational flexibility, innovation, and business agility.
-* **Cost efficiency**: Spend efficiently with pay-as-you-go pricing, cost-management tools, data lifecycle policies, and the EFS and S3 Storage Classes. With these capabilities, you can cost-effectively protect data in the cloud without sacrificing performance. 
-
 
 ### Baseline Requirement for Backup and Restore in AWS
 
@@ -49,6 +42,59 @@ Setting up backup and retore depend on the requirements from regulatory bodies, 
 #### Integrating Partner's Requirements
 <>
 <>
+
+### Backup and Archival Services 
+
+The most basic services you can use for backup and archival are Amazon [S3] (https://aws.amazon.com/s3/) and Amazon [Glacier] (https://aws.amazon.com/glacier/). They both offer unlimited capacity and require no volume or media management as backup data sets grow. The  pay-for-whatyou-use model and low cost per GB/month make these services a good fit for data protection use cases.
+
+**Amazon S3**
+
+You can use Amazon S3 to store and retrieve any amount of data, at any time, from anywhere on the web. Amazon S3 offers a range of storage classes designed for different use cases. These include:
+- Amazon S3 Standard for general-purpose storage of frequently
+accessed data.
+- Amazon S3 Standard for infrequent Access for long-lived, but less
+frequently accessed data.
+- Amazon Glacier for long-term archive
+
+When choosing the Amazon S3 tier that will best suit you, some of the factors to consider are:
+1. Access frequency (how often do you need to read/write objects)
+2. Durability and Availability of objects
+3. Pricing (such as min capacity charge, min storage duration charge, retrieval fee)
+
+You can view details of the different storage [classes] (https://aws.amazon.com/s3/storage-classes/), which can help you decide in setting up your architecture.
+
+**Amazon Glacier**
+
+Amazon Glacier is an extremely low-cost, cloud archive storage service that provides secure and durable storage for data archiving and online backup. To keep costs low, Amazon Glacier is optimized for data that is infrequently accessed and for which retrieval times of several hours are acceptable. 
+
+You can view a detailed pricing comparison of Amazon S3 classes and Amazon Glacier [here] (https://aws.amazon.com/s3/pricing/).
+
+**AWS Backup**
+
+AWS [Backup] (https://aws.amazon.com/backup/) is a fully managed backup service that makes it easy to centralize and automate the backup of data across AWS services in the cloud and on premises. AWS Backup automates and consolidates backup tasks that were previously performed service-by-service, and removes the need to create custom scripts and manual processes. 
+
+AWS Backup support backup and restore for: Amazon EFS, Aamzon DynamoDB, Aamzon EC2, Amazon EBS, Amazon RDS, Amazon Aurora and AWS Storage Gateway. If you are interested to understand how AWS Backup integrated with these services, visit this [documentation] (https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-other-services.html).
+
+You can watch the video below to have an overview of AWS Backup
+
+{{< youtube id="QDiXzFx2iMU&t=34s" >}}
+
+### Backing EC2 with EBS Snapshots
+
+Amazon [EBS] (https://aws.amazon.com/ebs/) provides the ability to create snapshots (backups) of any Amazon EBS volume. It takes a copy of the volume and places it in Amazon S3, where it is stored redundantly in multiple Availability Zones. The first snapshot is a full copy of the volume; ongoing snapshots store incremental block-level changes only.
+
+You can watch the vide below to understand more about EBS, how to create EBS snapshot, monitoring of snapshot costs and automating snapshot management.
+
+{{< youtube id="TKEUrhhEy34" >}}
+
+You can check these documentations for some key actions you can do with EBS: [create] (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-creating-snapshot.html) snapshot, [delete] (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-deleting-snapshot.html) snapshot, [copy] (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-copy-snapshot.html) snapshot, [share] (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-modifying-snapshot-permissions.html) snapshot and [automate] (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/snapshot-lifecycle.html) snapshot.
+
+### RDS Backup Approach
+
+Amazon RDS includes features for automating database backups. Amazon RDS creates a storage volume snapshot of your database instance, backing up the entire DB instance, not just individual databases. 
+
+DB snapshots are user-initiated backups that enable you to back up your DB instance to a known state as frequently as you like, and then restore to that state at any time. The steps are easy and you can find them [here] (https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_CreateSnapshot.html).
+
 
 ### Setting Up for Common Backup and Restore Cases
 
@@ -72,7 +118,11 @@ This [documentation] (https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USE
 
 #### Restoring Data from DB Snapshot of Relational Database Service
 
-This [documentation] (https://aws.amazon.com/premiumsupport/knowledge-center/restore-rds-instance-from-snapshot/) provide the steps to restore data from both manual and automatic DB snapshots. 
+This [documentation] (https://aws.amazon.com/premiumsupport/knowledge-center/restore-rds-instance-from-snapshot/) provide the steps to restore data from both manual and automatic DB snapshots.
+
+#### Backing Up and Restoring with AWS Backup
+
+This [tutorial] (https://docs.aws.amazon.com/aws-backup/latest/devguide/getting-started.html) shows you how to perform the tasks necessary to back up and restore your resources using AWS Backup.
 
 ## Diving Deep: Additional Resources
 
