@@ -20,7 +20,7 @@ This section discusses how AWS can help you achieve high availability for cloud 
 
 Highly available systems are reliable and continue to operate even when critical components fail. They are also resilient and are able to recover from failure with minimum data loss and service disruption.
 
-**Understanding Availability Needs**
+**Understanding Your Availability Needs**
 
 Availability goals will differ according to the needs of your business. Availability goals can vary from those applicable to internal tools (for
 example, 99% availability) to those for mission critical workloads (for example,
