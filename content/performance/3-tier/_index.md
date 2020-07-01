@@ -1,5 +1,5 @@
 +++
-title = "Three-Tier Reference Architecture"
+title = "Three-Tier Architecture"
 date =  2020-06-13T05:13:08+08:00
 weight = 1
 +++
