@@ -1,5 +1,5 @@
 +++
-title = "Reduce your top AWS costs"
+title = "Reduce Your Top AWS costs"
 date =  2020-06-13T05:37:54+08:00
 weight = 1
 +++

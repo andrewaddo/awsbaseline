@@ -1,5 +1,5 @@
 +++
-title = "Schedule resource stop/start"
+title = "Schedule Resource Stop/Start"
 date =  2020-06-13T05:40:01+08:00
 weight = 5
 +++
