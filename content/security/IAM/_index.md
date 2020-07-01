@@ -4,7 +4,7 @@ date =  2020-06-13T05:13:08+08:00
 weight = 1
 +++
 
-This section will give you an introduction to AWS Identity Access Management and and a step-by-step guide to setting it up. You will also find hands-on labs that you can try at the end of the section before configuring your own system. Let’s begin!
+This section will give you an introduction to AWS Identity Access Management (IAM) and and a step-by-step guide to setting it up. You will also find hands-on labs that you can try at the end of the section before configuring your own system. Let’s begin!
 
 ### What are the expected outcomes?
 
@@ -18,14 +18,14 @@ This section will give you an introduction to AWS Identity Access Management and
 
 ## What is IAM
 
-AWS Identity and Access Management (IAM) is a web service that helps you securely control access to AWS resources. You use IAM to control who is authenticated (signed in) and authorized (has permissions) to use resources.
+[AWS Identity and Access Management (IAM)] (https://aws.amazon.com/iam/) is a web service that helps you securely control access to AWS resources. You use IAM to control who is authenticated (signed in) and authorized (has permissions) to use resources.
 
 You can watch the video below to have a quick overview of IAM
 
 {{< youtube id="Ul6FW4UANGc" >}}
 
 
-### Here are the Benefits of AWS IAM
+AWS IAM is an integral part of a secure environment, and highlighted below are some of the [benefits] (https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html#intro-video):
 
 * **Shared access to your AWS account**: You can grant other people permission to administer and use resources in your AWS account without having to share your password or access key.
 
@@ -33,24 +33,28 @@ You can watch the video below to have a quick overview of IAM
 
 * **Multi-factor authentication (MFA)**: You can add two-factor authentication to your account and to individual users for extra security. With MFA you or your users must provide not only a password or access key to work with your account, but also a code from a specially configured device.
 
-There are more benefits to using IAM and you can find them in this [documentation] (https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html#intro-video).
-
 ## Best Practices for AWS IAM Setup
 
 It is important to ensure that your environment is secure and only the right users have the right access.
 
-These are some of the list of setup configurations that you must have to ensure a secure environment
+These are some of the [security best practices] (https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) we recommend you follow:
 
 **Root Account Protection**
 
-You use an access key (an access key ID and secret access key) to make programmatic requests to AWS. However, do not use your AWS account root user access key. The access key for your AWS account root user gives full access to all your resources for all AWS services, including your billing information. You cannot reduce the permissions associated with your AWS account root user access key.
+You use an access key (an access key ID and secret access key) to make programmatic requests to AWS. However, do not use your [AWS account root user] (https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html) access key. 
+
+The access key for your AWS account root user gives full access to all your resources for all AWS services, including your billing information. You cannot reduce the permissions associated with your AWS account root user access key.
 Therefore, protect your root user access key like you would your credit card numbers or any other sensitive secret.
 
-You can watch the [video] (https://www.youtube.com/watch?v=ZaxCLDZgZBo&list=PLhr1KZpdzukf2K67aldy_A1pAC-SkpPWz&index=4&t=1s) below for an overview of root accounr protection.
+You can watch the [video] (https://www.youtube.com/watch?v=ZaxCLDZgZBo&list=PLhr1KZpdzukf2K67aldy_A1pAC-SkpPWz&index=4&t=1s) below for an overview of root account protection.
 
-**Least Privilege**
+{{< youtube id="ZaxCLDZgZBo" >}}
 
-When you create IAM policies, follow the standard security advice of granting least privilege, or granting only the permissions required to perform a task. Determine what users (and roles) need to do and then craft policies that allow them to perform only those tasks.
+When you are done, read this documentation for the [best practices for managing AWS access keys] (https://docs.aws.amazon.com/general/latest/gr/aws-access-keys-best-practices.html#root-password). 
+
+**Grant Least Privilege**
+
+In a gist, grant only the permissions required to perform a task. Determine what users (and roles) need to do and then craft policies that allow them to perform only those tasks.
 
 Start with a minimum set of permissions and grant additional permissions as necessary. Doing so is more secure than starting with permissions that are too lenient and then trying to tighten them later.
 
@@ -60,16 +64,24 @@ Instead of defining permissions for individual IAM users, it's usually more conv
 
 **Enable MFA**
 
-For extra security, we recommend that you require multi-factor authentication (MFA) for all users in your account. With MFA, users have a device that generates a response to an authentication challenge. Both the user's credentials and the device-generated response are required to complete the sign-in process. If a user's password or access keys are compromised, your account resources are still secure because of the additional authentication requirement.
+Wwe recommend that you require multi-factor authentication (MFA) for all users in your account. 
+
+Set up a [multi-factor authentication (MFA) device] (https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_configure-api-require.html) to protect access keys that have only API access. Using MFA can also help fine-tune which API commands require an MFA token to proceed.
+
+If you suspect that a password or access key pair has been exposed:
+
+* [Rotate all access key pairs] (https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_RotateAccessKey)
+
+* [Change your root user password] (https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_change-root.html)
+
+Watch the video below to understand more about MFA
+
+{{< youtube id="A3AObXBJ4Lw" >}}
 
 You can find a comprehensive list in this [documentation]
 (https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) and we recommend that you enforce them.
 
-{{< youtube id="ZaxCLDZgZBo&list=PLhr1KZpdzukf2K67aldy_A1pAC-SkpPWz&index=4&t=1s" >}}
-
 ## Setting Up AWS IAM
-
-Now that you have a better understanding of the concepts, let us set it up! 
 
 Setting IAM is quick and easy as you will see in the video below:
 
