@@ -7,24 +7,26 @@ weight = 5
 ## Introduction
 
 The goal of the minimum security baseline is to ensure key AWS Security Services and configuration settings are being enabled and leveraged. Many of the controls below can be applied at an AWS account level or "platform" level.
-AWS Service specific security controls (Redshift, EMR, S3, RDS for example) should also be considered as part of your archiecture design review. 
+AWS Service specific security controls ([Redshift](https://aws.amazon.com/redshift/), [EMR] (https://aws.amazon.com/emr/#:~:text=Amazon%20EMR%20is%20the%20industry,%2C%20Apache%20Hudi%2C%20and%20Presto.), [S3] (https://aws.amazon.com/s3/), [RDS] (https://aws.amazon.com/rds/) for example) should also be considered as part of your archiecture design review. 
 
 [Review the AWS Security Documentation for service specific configurations.](https://docs.aws.amazon.com/security/)
 
 ## Asset Management
 
-Control Objective: Ensure accurate inventory of all AWS accounts, systems, and resoruces to inform the security team to ensure completeness of security coverage.
+Objective: Ensure accurate inventory of all AWS accounts, systems, and resourcess to inform the security team to ensure completeness of security coverage.
 
 * All accounts must have accurate account contact information (billing, operations, security)
-* All accounts must be enrolled in the AWS Organization structure for centralized management
-* Enable AWS Config for inventory management
-* Use AWS Systems Manager Inventory to inventory software and applications
+* All accounts must be enrolled in the [AWS Organization] (https://www.awsbaseline.com/security/organizations/) structure for centralized management
+* Enable [AWS Config] (https://www.awsbaseline.com/security/compliance/) for inventory management
+* Use [AWS Systems Manager Inventory] (https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-inventory.html) to inventory software and applications. You can watch these Inventory Services [1] (https://www.youtube.com/watch?v=z4n3Oh1MJDQ) and [2] (https://www.youtube.com/watch?v=0GgSTttRENU) videos to understand more.
+
+
 
 ## Identity & Access Management
 
-Control Objective: Ensure only authenticated and authorised individuals have the ability to interact with AWS resources.
+Objective: Ensure only authenticated and authorised individuals have the ability to interact with AWS resources.
 
-* First choice should be to federate identity and not use AWS IAM users (AWS SSO, Third-Party (Okta, Ping Identity) or On-Premises Identity Provider)
+* First choice should be to [federate identity] (https://aws.amazon.com/identity/federation/) and not use AWS IAM users (AWS SSO, Third-Party (Okta, Ping Identity) or On-Premises Identity Provider)
 * All console access must have multi-factor authentication enforced
 * Strong password policy must be enforced
 * Long term access keys should be replaced with temporary credentials (IAM Assume Role)
@@ -35,21 +37,21 @@ Control Objective: Ensure only authenticated and authorised individuals have the
 
 ## Detective Controls
 
-* Enable Multi-region CloudTrails
-* Enable Amazon GuardDuty
-* Enable IAM Access Analyzer
-* Enable Amazon S3 access logs
-* Enable AWS Security Hub (Enable applicable compliance standard: Security Foundations, PCI-DSS, CIS Benchmark)
-* Leverage and integrate Trusted Advisor findings
-* Enable VPC Flow Logs
+* Enable Multi-region [CloudTrails] (https://aws.amazon.com/cloudtrail/)
+* Enable [Amazon GuardDuty] (https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_settingup.html)
+* Enable [IAM Access Analyzer] (https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-getting-started.html)
+* Enable [Amazon S3 access logs] (https://docs.aws.amazon.com/AmazonS3/latest/user-guide/server-access-logging.html)
+* Enable [AWS Security Hub] (https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-settingup.html) (Enable applicable compliance standard: Security Foundations, PCI-DSS, CIS Benchmark)
+* Leverage and integrate [Trusted Advisor] (https://aws.amazon.com/premiumsupport/technology/trusted-advisor/) findings
+* Enable [VPC Flow Logs] (https://aws.amazon.com/blogs/aws/vpc-flow-logs-log-and-view-network-traffic-flows/#:~:text=Enabling%20VPC%20Flow%20Logs,tab%20of%20the%20VPC%20dashboard.)
 * Centralize all logs (Cloudtrail, config, GuardDuty, SecurityHub, VPC Flow Logs) to SOC and review and action on alerts
 
 ## Data Protection
 
-* Data-at-rest is encrypted (KMS)
-* Data-in-transit is encrypted (TLS + ACM)
-* Backups are restored in secure non-deletable locations (WORM)
-* Certificates are managed appropriately and renewed before expiry (Leverage ACM)
+* Data-at-rest is encrypted ([KMS] (https://aws.amazon.com/kms/))
+* Data-in-transit is encrypted (TLS + [AWS Certificate Manager] (https://aws.amazon.com/certificate-manager/))
+* Backups are restored in secure non-deletable locations ([WORM] (https://aws.amazon.com/blogs/aws/glacier-vault-lock/))
+* Certificates are managed appropriately and renewed before expiry (Leverage [AWS Certificate Manager] (https://aws.amazon.com/certificate-manager/))
 * Resources are private (S3, EBS Snapshots and Volumes, RDS Snapshots, etc)
 * Public S3 buckets are denied by default at an account level
 * Public S3 buckets that are required are whitelisted and reviewed for sensitive content, frequent attestation.
@@ -57,10 +59,10 @@ Control Objective: Ensure only authenticated and authorised individuals have the
 
 ## Infrastructure Security
 
-* Patch your resources frequently (Optional: Use AWS Systems Manager to do this)
+* Patch your resources frequently (Optional: Use [AWS Systems Manager] (https://aws.amazon.com/systems-manager/#:~:text=AWS%20Systems%20Manager%20gives%20you,tasks%20across%20your%20AWS%20resources.) to do this)
 * Vulnerability scan compute resource frequently
 * Security Groups should be limited to only required flows (inbound and outbound)
-* Internet facing applications are protected by WAF and Shield
+* Internet facing applications are protected by [AWS WAF] (https://aws.amazon.com/waf/) and [AWS Shield] (https://aws.amazon.com/shield/)
 * Internet facing applications leverage Route53 for DNS
 * Internet facing applications leverage CloudFront for CDN
 * Management services (SSH, RDP, etc) are not exposed to Internet

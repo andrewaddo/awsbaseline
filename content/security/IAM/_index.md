@@ -39,7 +39,7 @@ It is important to ensure that your environment is secure and only the right use
 
 These are some of the [security best practices] (https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) we recommend you follow:
 
-**Root Account Protection**
+**Root Account Protection and Federation**
 
 You use an access key (an access key ID and secret access key) to make programmatic requests to AWS. However, do not use your [AWS account root user] (https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html) access key. 
 
@@ -50,7 +50,9 @@ You can watch the [video] (https://www.youtube.com/watch?v=ZaxCLDZgZBo&list=PLhr
 
 {{< youtube id="ZaxCLDZgZBo" >}}
 
-When you are done, read this documentation for the [best practices for managing AWS access keys] (https://docs.aws.amazon.com/general/latest/gr/aws-access-keys-best-practices.html#root-password). 
+Another best practice is [Identity Federation] (https://aws.amazon.com/identity/federation/) (AWS SSO, Third-Party (Okta, Ping Identity) or On-Premises Identity Provider).
+
+You can read this documentation for the [best practices for managing AWS access keys] (https://docs.aws.amazon.com/general/latest/gr/aws-access-keys-best-practices.html#root-password). 
 
 **Grant Least Privilege**
 
