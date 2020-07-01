@@ -42,7 +42,7 @@ Using the AWS network dramatically reduces the number of networks that your user
 
 If you are interested to learn more, you can read this [documentation] (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html).
 
-## Setting Up Elasticache and CloudFront
+## Labs and Hands-on Resources
 
 Looks like you are all set! To help you implement, here are some labs that we recommend you can practice on.
 

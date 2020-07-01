@@ -14,7 +14,7 @@ This section discusses how AWS can help you achieve high availability for cloud 
 
 ### Pre-requisites
 
-1. None
+1. AWS Account
 
 ## What is a Highly Available Infrastructure
 
@@ -31,14 +31,17 @@ to achieve the highest levels of availability.
 
 As you go through this section, it is important to take a step back and discuss what your availability goals will be like.
 
-**Design Principles for Availability**
+**Best Practices for High Availability**
 
 When designing your  architecture, it is best to keep in mind below general best practices:
 
 ***Fault Isolation Zones***
 
 Increasing a system’s availability beyond the availability of individual
-components is to make use of multiple independent components in parallel (i.e. multi-AZ, [cross-Region] (https://aws.amazon.com/s3/features/replication/) replication for Amazon S3 and the ability to copy various [snapshots] (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-copy-snapshot.html) and Amazon Machine Images [(AMIs)] (https://aws.amazon.com/premiumsupport/knowledge-center/copy-ami-region/) to other Regions)
+components is to make use of multiple independent components in parallel such as: 
+* [Multi-AZ] (https://aws.amazon.com/rds/features/multi-az/) deployment
+* [Cross-Region replication for Amazon S3] (https://aws.amazon.com/s3/features/replication/)  
+* Ability to [copy snapshots] (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-copy-snapshot.html) and  [Amazon Machine Images (AMIs)] (https://aws.amazon.com/premiumsupport/knowledge-center/copy-ami-region/) to other Regions)
 
 You can watch the video below to understand more about Amazon S3 Cross-Regional Replication
 {{< youtube id="kAaPjE9-a2A" >}}
@@ -50,11 +53,11 @@ a single compute node, single storage volume, or single instance of a database.
 
 ***Microservice architecture***
 
-Microservices are an architectural and organizational approach to software development where software is composed of small independent services that communicate over well-defined APIs. These services are owned by small, self-contained teams.
+[Microservices] (https://aws.amazon.com/microservices/) are an architectural and organizational approach to software development where software is composed of small independent services that communicate over well-defined APIs. These services are owned by small, self-contained teams.
 
-[Microservices] (https://aws.amazon.com/microservices/) architectures make applications easier to scale and faster to develop, enabling innovation and accelerating time-to-market for new features.
+[Microservices architectures] (https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/simple-microservices-architecture-on-aws.html) make applications easier to scale and faster to develop, enabling innovation and accelerating time-to-market for new features.
 
-You can watch the video below to understand the difference and evolution from monolithic to microservice architecture
+You can watch the [video] (https://www.youtube.com/watch?v=Ijs55IA8DIk) below to understand the difference and evolution from monolithic to microservice architecture
 
 {{< youtube id="Ijs55IA8DIk" >}}
 
@@ -63,9 +66,9 @@ This is can be an advance topic for you but if you are interested, you can try t
 ***Recovery Oriented Computing (ROC)***
 
 ROC suggests focusing on having the right
-mechanisms to detect failures (such as Elastic Load Balancing [ELB] (https://aws.amazon.com/elasticloadbalancing/#:~:text=Elastic%20Load%20Balancing%20automatically%20distributes,or%20across%20multiple%20Availability%20Zones.) or Route53 health checks)
+mechanisms to detect failures (such as [Elastic Load Balancing] (https://aws.amazon.com/elasticloadbalancing/#:~:text=Elastic%20Load%20Balancing%20automatically%20distributes,or%20across%20multiple%20Availability%20Zones.) or Route53 health checks)
 
-You can watch the video below on how to create Amazon Route 53 Health Checks
+You can watch the [video] (https://www.youtube.com/watch?v=PnOFP4EZ6hs) below on how to create Amazon Route 53 Health Checks
 
 {{< youtube id="PnOFP4EZ6hs" >}}
 
@@ -96,7 +99,7 @@ Creating a highly available environment is done according to the needs of intern
 <>
 <>
 
-## Setting Up a Highly Available Environment
+## Labs and Hands-on Resources
 
 Looks like you are all set! To help you implement, here are some labs that we recommend you can practice on.
 
