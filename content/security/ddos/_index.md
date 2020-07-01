@@ -17,35 +17,48 @@ This section discusses DDOS attacks and the AWS services you can use to combat a
 
 ### What is a DDOS Attack
 
-A Denial of Service (DoS) attack is a malicious attempt to affect the availability of a targeted system, such as a website or application, to legitimate end users. Typically, attackers generate large volumes of packets or requests ultimately overwhelming the target system. In case of a Distributed Denial of Service (DDoS) attack, and the attacker uses multiple compromised or controlled sources to generate the attack.
+A Denial of Service (DoS) attack is a deliberate attempt to make your website or application unavailable to users, such as by looding it with network traffic. The attacker uses multiple sources— such as distributed groups of malware infected computers, routers, IoT devices, and other endpoints—to orchestrate an attack against a target. The attacker's goal is to consume large amounts of network bandwidth or tie up other system resources, disrupting access for legitimate users. 
 
-You can find more information [here](https://aws.amazon.com/shield/ddos-attack-protection/).
+DDoS attacks can be segregated by which [OSI Layer](https://aws.amazon.com/shield/ddos-attack-protection/) they attack.
 
 To understand how you can protect yourself from DDOS attacks, you can watch the [video](https://www.youtube.com/watch?v=d0EE1HuZSEU) below for an overview.
 {{< youtube id="d0EE1HuZSEU" >}}
 
 ### Best Practices for DDOS Resiliency
 
-It is important to learn the mitigation techniques for different attacks. You can find this comprehensive documentation containing DDOS Best Practices [here](https://d1.awsstatic.com/whitepapers/Security/DDoS_White_Paper.pdf) - or watch the video below:
+#### AWS Shield
 
-You can watch the [video](https://www.youtube.com/watch?v=HnoZS5jj7pk&t=3s) below to find out more:
-{{< youtube id="HnoZS5jj7pk" >}}
+[AWS Shield] (https://aws.amazon.com/shield/) is a managed Distributed Denial of Service (DDoS) protection service that safeguards applications running on AWS.There are two tiers of AWS Shield - Standard and Advanced.
 
-### What is AWS Shield and Why You Should Use It
+**Standard protection** provides automatic defense against the most common network and transport layer DDoS attacks for any AWS resource, in any AWS Region. It provides comprehensive defense against all known network and transport layer attacks when using [Amazon CloudFront] (https://aws.amazon.com/cloudfront/) and [Amazon Route 53] (https://aws.amazon.com/route53/).
 
-AWS Shield is a managed Distributed Denial of Service (DDoS) protection service that safeguards applications running on AWS. AWS Shield provides always-on detection and automatic inline mitigations that minimize application downtime and latency, so there is no need to engage AWS Support to benefit from DDoS protection. There are two tiers of AWS Shield - Standard and Advanced.
-
-**Standard protection** provides automatic defense against the most common network and transport layer DDoS attacks for any AWS resource, in any AWS Region. It provides comprehensive defense against all known network and transport layer attacks when using Amazon CloudFront and Amazon Route 53.
+Note: All AWS customers benefit from the automatic protections of AWS Shield Standard at
+no additional charge. AWS Shield Standard defends against most common, frequently
+occurring network and transport layer DDoS attacks that target your web site or
+applications. 
 
 **Advanced Protection** provides attack visibility and enhanced detection. It also has Cost Protection to mitigate economic attack vectors with fast escalation to the AWS DDoS Response Team (DRT) to assist with complex edge case.
 
 **Pricing:** Standard protection is available to ALL AWS customers at no additional cost. Advanced protection is a paid service that provides additional protections, features, and benefits.
 
-You can find out more in this [documentation](https://docs.aws.amazon.com/waf/latest/developerguide/ddos-overview.html).
+You can read this [documentation] (https://docs.aws.amazon.com/waf/latest/developerguide/ddos-overview.html#ddos-help-me-choose) to help you decide between staying with Standard Protection or upgrading to Advance.
 
-### What is AWS WAF and Why You Should Use It
+You can watch the [video](https://www.youtube.com/watch?v=HnoZS5jj7pk&t=3s) below to find out more:
+{{< youtube id="HnoZS5jj7pk" >}}
 
-AWS WAF is a web application firewall that helps protect your web applications or APIs against common web exploits that may affect availability, compromise security, or consume excessive resources.
+#### Elastic Load Balancing
+
+Large DDoS attacks can overwhelm the capacity of a single Amazon EC2 instance, so adding load balancing can help your resiliency. 
+
+With [Elastic
+Load Balancing (ELB)] (https://aws.amazon.com/elasticloadbalancing/), you can reduce the risk of overloading your application by distributing traffic across many backend instances. ELB can scale automatically, allowing you to manage larger volumes when you have unanticipated extra traffic, for example, due to flash crowds or DDoS attacks.
+
+#### AWS WAF 
+
+When your application runs on AWS, you can leverage both Amazon CloudFront and
+AWS WAF to help defend against application layer DDoS attacks.
+
+[AWS WAF] (https://aws.amazon.com/waf/) is a web application firewall that helps protect your web applications or APIs against common web exploits that may affect availability, compromise security, or consume excessive resources.
 
 AWS WAF gives you control over how traffic reaches your applications by enabling you to create security rules that block common attack patterns, such as SQL injection or cross-site scripting, and rules that filter out specific traffic patterns you define.
 
