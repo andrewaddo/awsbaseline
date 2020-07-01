@@ -42,7 +42,6 @@ You can watch the [video] (https://www.youtube.com/watch?v=ocZjGirQT9A) below to
 {{< youtube id="ocZjGirQT9A" >}}
 
 GuardDuty helps identify potentially unauthorized and malicious activities such as:
-
 * Uses of exposed credentials
 * Escalations of privileges
 * Communication with malicious IP addresses, URLs, or domains
@@ -51,7 +50,7 @@ GuardDuty helps identify potentially unauthorized and malicious activities such 
 
 GuardDuty informs you of the status of your AWS environment by producing security findings that you can view in the GuardDuty console or through [Amazon CloudWatch events] (https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings_cloudwatch.html). You can find the [pricing here] (https://aws.amazon.com/guardduty/pricing/).
 
-## AwS Security Hub
+## AWS Security Hub
 
 AWS Security Hub provides you with a comprehensive view of your security state in AWS and helps you check your environment against security industry standards and best practices.
 
