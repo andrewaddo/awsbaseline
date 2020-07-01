@@ -28,7 +28,7 @@ You can watch the video below to have a quick overview of AWS Organizations.
 For **common customer setup**, the master account creates the organization and invites other existing accounts (member accounts such as DEV, TEST, PROD etc) to the organization. You can visualize this setup below:
 ![Basic organization setup](../img/AWSOrganization_basicSetup.png)
 
-If you are very new to AWS, I recommend reading this documentation to understand key terminologies [here](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_getting-started_concepts.html) such as
+If you are very new to AWS, I recommend reading this documentation to understand key terminologies [here](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_getting-started_concepts.html) such as master account, member account and organizational units.
 
 ## Setting up AWS Organization
 
@@ -38,7 +38,7 @@ In this [guide](https://aws.amazon.com/premiumsupport/knowledge-center/get-start
 
 Next, you use the [allow list](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_getting-started_concepts.html#allowlist) technique to specify that account administrators can delegate only explicitly listed services and actions. 
 
-This allows administrators to validate any new service that AWS introduces before they permit its use by anyone else in your company. That way, if AWS introduces a new service, it remains prohibited until an administrator adds the service to the allow list in the appropriate policy. The tutorial also shows you how to use a [deny list](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_getting-started_concepts.html#denylist) to ensure that no users in a member account can change the configuration for the auditing logs that AWS CloudTrail creates.
+This allows administrators to validate any new service that AWS introduces before they permit its use by anyone else in your company. That way, if AWS introduces a new service, it remains prohibited until an administrator adds the service to the allow list in the appropriate policy. The tutorial also shows you how to use a [deny list](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_getting-started_concepts.html#denylist) to ensure that no users in a member account can change the configuration for the auditing logs that [AWS CloudTrail] (https://aws.amazon.com/cloudtrail/) creates.
 
 ### Creating and configuring an organization
 
@@ -74,7 +74,7 @@ You can follow this [lab] (https://kapilpendse.github.io/techshift-accelerator-c
 
 [AWS Control Tower](https://aws.amazon.com/controltower/) provides the easiest way to set up and govern a new, secure, multi-account AWS environment based on best practices established through AWS’ experience working with thousands of enterprises as they move to the cloud. With AWS Control Tower, builders can provision new AWS accounts in a few clicks, while you have peace of mind knowing your accounts conform to your company-wide policies. Please refer to this [page](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/) for updated availability of Control Tower across regions.
 
-You can watch the video below to understand what Control Tower is and how it helps maintain compliance.
+You can watch the [video] (https://www.youtube.com/watch?v=daLvEb44d5Q) below to understand what Control Tower is and how it helps maintain compliance.
 
 {{< youtube id="daLvEb44d5Q" >}}
 
