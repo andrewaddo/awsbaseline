@@ -8,105 +8,62 @@ This section will give you an introduction to AWS Identity Access Management (IA
 
 ### What are the expected outcomes?
 
-1. Understand IAM and IAM Best Practices
-2. Successfully setup IAM Users, Group and Roles
-3. Successfully configure policies and MFA
+1. Understand IDS and IPS
+2. Understand Security Hub and GuardDuty
 
 ### Pre-requisites
 
 1. AWS Account
 
-## What is IAM
+## What are IDS and IPS
 
-[AWS Identity and Access Management (IAM)] (https://aws.amazon.com/iam/) is a web service that helps you securely control access to AWS resources. You use IAM to control who is authenticated (signed in) and authorized (has permissions) to use resources.
+**Intrusion Detection Systems (IDS)** monitor networks and/or systems for malicious activity or policy violation, and report them to systems administrators or to a security information and event management (SIEM) system. 
 
-You can watch the [video] (https://www.youtube.com/watch?v=Ul6FW4UANGc) below to have a quick overview of IAM
+**Intrusion Prevention Systems (IPS)** are positioned
+behind firewalls and provide an additional layer of security by scanning and analyzing suspicious content for potential threats. Placed in the direct communication path, an IPS will take automatic action on suspicious traffic within the network.
 
-{{< youtube id="Ul6FW4UANGc" >}}
+These are the reasons why you need to implement IDS and IPS for your system:
 
+* Detect Vulnerability in your EC2 Instances: by monitoring inbound and outbound packets from the EC2 instance, and may evaluate system files for changes
 
-AWS IAM is an integral part of a secure environment, and highlighted below are some of the [benefits] (https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html#intro-video):
+* Protect Your EC2 Instances from Attacks: by having e always-on detection to safeguard your EC2 instances
 
-* **Shared access to your AWS account**: You can grant other people permission to administer and use resources in your AWS account without having to share your password or access key.
+* Respond to Intrusion or Attacks Against your EC2 Instances: by performing  threat analysts to rapidly assess the nature and extent of incidents and take the
+proper measures to respond to it
 
-* **Granular permissions**: You can grant different permissions to different people for different resources. 
+Here are some [IDS/IPS solutions from AWS Marketplace] (https://aws.amazon.com/marketplace/solutions/infrastructure-software/ids-ips) that you can use and apply for your architecture.
 
-* **Multi-factor authentication (MFA)**: You can add two-factor authentication to your account and to individual users for extra security. With MFA you or your users must provide not only a password or access key to work with your account, but also a code from a specially configured device.
+## Amazon GuardDuty
 
-## Best Practices for AWS IAM Setup
+Amazon GuardDuty is a continuous security monitoring service that analyzes and processes the following data sources: [VPC Flow Logs] (https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html), [AWS CloudTrail event logs] (https://docs.aws.amazon.com/awscloudtrail/latest/userguide/view-cloudtrail-events-console.html), and [DNS logs] (https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/logging-monitoring.html).
 
-It is important to ensure that your environment is secure and only the right users have the right access.
+You can watch the [video] (https://www.youtube.com/watch?v=ocZjGirQT9A) below to have an overview of GuardDuty and how you can complement your IDS/IPS solutions.
 
-These are some of the [security best practices] (https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) we recommend you follow:
+{{< youtube id="ocZjGirQT9A" >}}
 
-**Root Account Protection and Federation**
+GuardDuty helps identify potentially unauthorized and malicious activities such as:
 
-You use an access key (an access key ID and secret access key) to make programmatic requests to AWS. However, do not use your [AWS account root user] (https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html) access key. 
+* Uses of exposed credentials
+* Escalations of privileges
+* Communication with malicious IP addresses, URLs, or domains
+* Compromised EC2 instances serving malware or mining bitcoin
+* Unauthorized nfrastructure deployments
 
-The access key for your AWS account root user gives full access to all your resources for all AWS services, including your billing information. You cannot reduce the permissions associated with your AWS account root user access key.
-Therefore, protect your root user access key like you would your credit card numbers or any other sensitive secret.
-
-You can watch the [video] (https://www.youtube.com/watch?v=ZaxCLDZgZBo&list=PLhr1KZpdzukf2K67aldy_A1pAC-SkpPWz&index=4&t=1s) below for an overview of root account protection.
-
-{{< youtube id="ZaxCLDZgZBo" >}}
-
-Another best practice is [Identity Federation] (https://aws.amazon.com/identity/federation/) (AWS SSO, Third-Party (Okta, Ping Identity) or On-Premises Identity Provider).
-
-You can read this documentation for the [best practices for managing AWS access keys] (https://docs.aws.amazon.com/general/latest/gr/aws-access-keys-best-practices.html#root-password). 
-
-**Grant Least Privilege**
-
-In a gist, grant only the permissions required to perform a task. Determine what users (and roles) need to do and then craft policies that allow them to perform only those tasks.
-
-Start with a minimum set of permissions and grant additional permissions as necessary. Doing so is more secure than starting with permissions that are too lenient and then trying to tighten them later.
-
-**User Permissions on Groups**
-
-Instead of defining permissions for individual IAM users, it's usually more convenient to create groups that relate to job functions (administrators, developers, accounting, etc.). Next, define the relevant permissions for each group. Finally, assign IAM users to those groups. All the users in an IAM group inherit the permissions assigned to the group. That way, you can make changes for everyone in a group in just one place. As people move around in your company, you can simply change what IAM group their IAM user belongs to.
-
-**Enable MFA**
-
-Wwe recommend that you require multi-factor authentication (MFA) for all users in your account. 
-
-Set up a [multi-factor authentication (MFA) device] (https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_configure-api-require.html) to protect access keys that have only API access. Using MFA can also help fine-tune which API commands require an MFA token to proceed.
-
-If you suspect that a password or access key pair has been exposed:
-
-* [Rotate all access key pairs] (https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_RotateAccessKey)
-
-* [Change your root user password] (https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_change-root.html)
-
-Watch the video below to understand more about MFA
-
-{{< youtube id="A3AObXBJ4Lw" >}}
-
-You can find a comprehensive list in this [documentation]
-(https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) and we recommend that you enforce them.
+GuardDuty informs you of the status of your AWS environment by producing security findings that you can view in the GuardDuty console or through [Amazon CloudWatch events] (https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings_cloudwatch.html). You can find the [pricing here] (https://aws.amazon.com/guardduty/pricing/).
 
 ## Labs and Hands-On Resources
 
-Setting IAM is quick and easy as you will see in the video below:
+### Enabling GuardDuty
 
-{{< youtube id="wRzzBb18qUw" >}}
+You can check this [tutorial] (https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_settingup.html) to setup GuardDuty.
 
-### Creating a new AWS Account 
+### Testing against multiple intrusion scenarios
 
-This [lab] (https://wellarchitectedlabs.com/security/100_labs/100_aws_account_and_root_user/) will guide you in creating an AWS account and securing the root user.
+These [labs] (https://hands-on-guardduty.awssecworkshops.com/) will walk you through a scenario covering threat detection and remediation using Amazon GuardDuty. The labs has 3 components:
+* [Compromised EC2 Instance] (https://hands-on-guardduty.awssecworkshops.com/scenario1/)
+* [Compromised IAM Credentials] (https://hands-on-guardduty.awssecworkshops.com/scenario2/)
+* [IAM Role Exfiltration] (https://hands-on-guardduty.awssecworkshops.com/scenario3/)
 
-### Creating IAM User, Group and Roles 
+### Monitoring Host-Based Intrusion Detection System Alerts
 
-This [lab] (https://wellarchitectedlabs.com/security/100_labs/100_basic_identity_and_access_management_user_group_role/) will help you create and protect AWS credentials while implementing least privilege
-
-This [workshop] (http://aws-core-services.ws.kabits.com/getting-started-with-iam/) will help you understand the concepts and setup even better
-
-### Creating and Attaching Your First Customer Managed Policy 
-
-This [tutorial] (https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_managed-policies.html) will help you create, attach and test your policies
-
-### Configuring Credential and MFA 
-
-This [tutorial] (https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_users-self-manage-mfa-and-creds.html) will help you access AWS services with MFA
-
-### Authenticating and Authorizing with IAM
-
-This comprehensive [training] (https://www.aws.training/Details/Video?id=16484) will introduce you to IAM and discuss how the service helps you manage permissions to your AWS services. It will also cover policy documents and IAM identities.
+You can follow this [tutorial] (https://aws.amazon.com/blogs/security/how-to-monitor-host-based-intrusion-detection-system-alerts-on-amazon-ec2-instances/) to leverage on [Amazon Cloudwatch Logs] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html) to collect and aggregate alerts.
