@@ -30,7 +30,7 @@ For **common customer setup**, the master account creates the organization and i
 
 If you are very new to AWS, I recommend reading this documentation to understand key terminologies [here](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_getting-started_concepts.html) such as master account, member account and organizational units.
 
-## Setting up AWS Organization
+## Labs and Hands-On Resources
 
 {{< youtube id="mScBPL8VV48" >}}
 

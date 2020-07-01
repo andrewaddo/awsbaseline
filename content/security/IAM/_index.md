@@ -81,7 +81,7 @@ Watch the video below to understand more about MFA
 You can find a comprehensive list in this [documentation]
 (https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) and we recommend that you enforce them.
 
-## Setting Up AWS IAM
+## Labs and Hands-On Resources
 
 Setting IAM is quick and easy as you will see in the video below:
 

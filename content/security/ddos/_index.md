@@ -51,23 +51,23 @@ You can watch the [video](https://www.youtube.com/watch?v=HnoZS5jj7pk&t=3s) belo
 Large DDoS attacks can overwhelm the capacity of a single Amazon EC2 instance, so adding load balancing can help your resiliency. 
 
 With [Elastic
-Load Balancing (ELB)] (https://aws.amazon.com/elasticloadbalancing/), you can reduce the risk of overloading your application by distributing traffic across many backend instances. ELB can scale automatically, allowing you to manage larger volumes when you have unanticipated extra traffic, for example, due to flash crowds or DDoS attacks.
+Load Balancer (ELB)] (https://aws.amazon.com/elasticloadbalancing/), you can reduce the risk of overloading your application by distributing traffic across many backend instances. ELB can scale automatically, allowing you to manage larger volumes when you have unanticipated extra traffic, for example, due to flash crowds or DDoS attacks. You can check this [tutorial] (https://aws.amazon.com/elasticloadbalancing/getting-started/) if you want to set up a load balancer.
 
 #### AWS WAF 
 
-When your application runs on AWS, you can leverage both Amazon CloudFront and
+When your application runs on AWS, you can leverage both [Amazon CloudFront] (https://aws.amazon.com/cloudfront/) and
 AWS WAF to help defend against application layer DDoS attacks.
 
 [AWS WAF] (https://aws.amazon.com/waf/) is a web application firewall that helps protect your web applications or APIs against common web exploits that may affect availability, compromise security, or consume excessive resources.
 
-AWS WAF gives you control over how traffic reaches your applications by enabling you to create security rules that block common attack patterns, such as SQL injection or cross-site scripting, and rules that filter out specific traffic patterns you define.
+AWS WAF gives you control over how traffic reaches your applications by enabling you to create security rules that [block common attack patterns] (https://aws.amazon.com/premiumsupport/knowledge-center/waf-block-common-attacks/), such as [SQL injection] (https://docs.aws.amazon.com/waf/latest/developerguide/classic-web-acl-sql-conditions.html) or [cross-site scripting] (https://docs.aws.amazon.com/waf/latest/developerguide/classic-web-acl-xss-conditions.html), and rules that filter out specific traffic patterns you define.
 
 AWS WAF provides: web traffic filtering with custom rules, malicious request blocking and active monitoring and tuning.
 
 You can watch the [video](https://www.youtube.com/watch?v=2lAcE3NA2UU) below to understand more
 {{< youtube id="2lAcE3NA2UU" >}}
 
-### Setting Up Against DDOS Attacks
+### Labs and Hands-On Resources
 
 #### Protecting against network and host-level attacks with AWS WAF
 
