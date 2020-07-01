@@ -13,7 +13,7 @@ This section will give you an introduction to AWS Organizations and and a step-b
 
 ### Pre-requisites
 
-1. None
+1. AWS Account
 
 ## What is AWS Organizations
 

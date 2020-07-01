@@ -13,7 +13,7 @@ This section discusses DDOS attacks and the AWS services you can use to combat a
 
 ### Pre-requisites
 
-1. None
+1. AWS Account
 
 ### What is a DDOS Attack
 

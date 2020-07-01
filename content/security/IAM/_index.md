@@ -14,7 +14,7 @@ This section will give you an introduction to AWS Identity Access Management (IA
 
 ### Pre-requisites
 
-1. None
+1. AWS Account
 
 ## What is IAM
 
