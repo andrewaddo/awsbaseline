@@ -80,7 +80,7 @@ You can watch the video below to understand what Control Tower is and how it hel
 
 ### Control Tower Lab 
 
-These [labs] (https://controltower.aws-management.tools/) will help you setup account factories, deploys additional services and manage lifecycle events.
+These labs will help you setup account factories, deploys additional services and manage lifecycle events.
 
 [Lab 1 - Overview] (https://controltower.aws-management.tools/core/overview/)
 
