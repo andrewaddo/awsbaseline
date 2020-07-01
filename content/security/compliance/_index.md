@@ -16,27 +16,31 @@ This section discusses AWS services such as Atlas and Artifact that you can use 
 
 ### What is What is Compliance Center
 
-AWS Compliance Center offers you a central location to research cloud-related regulatory requirements and how they impact your industry. AWS has customers throughout the world and is continually adapting to evolving regulations, so please contact us if your country of interest is not listed in the drop-down menu and you would like more information about AWS
-
-You can find out more in the **Atlas** [website] (https://www.atlas.aws/)
+[AWS Compliance Center] (https://www.atlas.aws/), **Atlas**, offers you a central location to research cloud-related regulatory requirements and how they impact your industry. AWS has customers throughout the world and is continually adapting to evolving regulations, so please contact us if your country of interest is not listed in the drop-down menu and you would like more information about AWS
 
 
-### Enforce Compliance in Your Application with AWS Artifact
+### Enforce Compliance with AWS Artifact
 
-AWS Artifact is a service that allows you to download AWS security compliance reports such as ISO and PCI reports. Using AWS Artifact, a user in a master account can automatically accept agreements on behalf of all member accounts in an organization, even as new reports and accounts are added.
+[AWS Artifact] (https://aws.amazon.com/artifact/) is a service that allows you to download AWS security compliance reports such as [ISO] (https://aws.amazon.com/compliance/iso-certified/) and [PCI] reports (https://aws.amazon.com/compliance/pci-dss-level-1-faqs/). Using AWS Artifact, a user in a master account can automatically accept agreements on behalf of all member accounts in an organization, even as new reports and accounts are added.
 
 You can watch the [video](https://www.youtube.com/watch?v=ILEoLqpbfXM) below to understand more
 {{< youtube id="ILEoLqpbfXM" >}}
 
 ### Maintain Compliance with AWS Config
 
-AWS Config is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources. Config continuously monitors and records your AWS resource configurations and allows you to automate the evaluation of recorded configurations against desired configurations. 
+[AWS Config] (https://aws.amazon.com/config/) is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources. Config continuously monitors and records your AWS resource configurations and allows you to automate the evaluation of recorded configurations against desired configurations. 
 
-You can watch the video below to understand more:
+The AWS Config [best practices] (https://aws.amazon.com/blogs/mt/aws-config-best-practices/) include:
+* Enable AWS Config in all accounts and Regions
+* Record configuration changes to ALL resource types
+* Record global resources (such as IAM resources) only in one Region
+* Ensure that you have a secure Amazon S3 bucket to collect the configuration history and snapshot files
+
+You can watch the [video] (https://www.youtube.com/watch?v=X_fznJtSyV8) below to understand more:
 
 {{< youtube id="X_fznJtSyV8" >}}
 
-You can find more information about AWS Config [here] (https://aws.amazon.com/config/)
+## Labs and Hands-On Resources
 
 ### Setting Up AWS Artifact
 
