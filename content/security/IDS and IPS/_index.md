@@ -24,11 +24,11 @@ behind firewalls and provide an additional layer of security by scanning and ana
 
 These are the reasons why you need to implement IDS and IPS for your system:
 
-* Detect Vulnerability in your EC2 Instances: by monitoring inbound and outbound packets from the EC2 instance, and may evaluate system files for changes
+* ***Detect Vulnerability in your EC2 Instances***: by monitoring inbound and outbound packets from the EC2 instance, and may evaluate system files for changes
 
-* Protect Your EC2 Instances from Attacks: by having e always-on detection to safeguard your EC2 instances
+* ***Protect Your EC2 Instances from Attacks***: by having e always-on detection to safeguard your EC2 instances
 
-* Respond to Intrusion or Attacks Against your EC2 Instances: by performing  threat analysts to rapidly assess the nature and extent of incidents and take the
+* ***Respond to Intrusion or Attacks Against your EC2 Instances***: by performing  threat analysts to rapidly assess the nature and extent of incidents and take the
 proper measures to respond to it
 
 Here are some [IDS/IPS solutions from AWS Marketplace] (https://aws.amazon.com/marketplace/solutions/infrastructure-software/ids-ips) that you can use and apply for your architecture.
@@ -53,16 +53,23 @@ GuardDuty informs you of the status of your AWS environment by producing securit
 
 ## AwS Security Hub
 
+AWS Security Hub provides you with a comprehensive view of your security state in AWS and helps you check your environment against security industry standards and best practices.
+
+Security Hub collects security data from across AWS accounts, services, and supported third-party partner products and helps you analyze your security trends and identify the highest priority security issues.
 
 You can [video] (https://www.youtube.com/watch?v=K7V5kNBjGCI&t=6s) below to understand more about Security Hub and how it helps in detecting threats.
 
 {{< youtube id="K7V5kNBjGCI&t=6s" >}}
 
+When you enable Security Hub, it begins to consume, aggregate, organize, and prioritize findings from AWS services that you have enabled, such as [Amazon GuardDuty] (https://aws.amazon.com/guardduty/), [Amazon Inspector] (https://aws.amazon.com/inspector/), and [Amazon Macie] (https://aws.amazon.com/macie/). 
+
+You can also [integrate AWS Security Hub with partner security products and solutions] (https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-partner-providers.html). 
+
 ## Labs and Hands-On Resources
 
-### Enabling GuardDuty
+### Enabling GuardDuty an Security Hub
 
-You can check this [tutorial] (https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_settingup.html) to setup GuardDuty.
+You can check these tutorials  to setup [GuardDuty] (https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_settingup.html) and [Security Hub] (https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-settingup.html).
 
 ### Testing against multiple intrusion scenarios
 
