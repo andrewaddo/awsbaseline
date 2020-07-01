@@ -16,7 +16,7 @@ The AWS Instance Scheduler is a simple AWS-provided solution that enables custom
 
 ### Step-by-Step Guide
 
-1. Access the [solution] (https://aws.amazon.com/solutions/implementations/instance-scheduler/)].
+1. Access the [Instance Scheduler] (https://aws.amazon.com/solutions/implementations/instance-scheduler/).
 1. Review the architecture and understand which components will be deployed.
 1. Follow the instructions from [here](https://docs.aws.amazon.com/solutions/latest/instance-scheduler/deployment.html).
 1. Among many strategies to schedule stopping and starting resources, a quick-win strategy is to shutdown resources during weekend and evening time (e.g. 17-9)

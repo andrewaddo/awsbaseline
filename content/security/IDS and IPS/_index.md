@@ -1,5 +1,5 @@
 +++
-title = "IDS and IPS"
+title = "IDS and IPS Threat Detection"
 date =  2020-06-13T05:13:08+08:00
 weight = 1
 +++
@@ -50,6 +50,13 @@ GuardDuty helps identify potentially unauthorized and malicious activities such 
 * Unauthorized nfrastructure deployments
 
 GuardDuty informs you of the status of your AWS environment by producing security findings that you can view in the GuardDuty console or through [Amazon CloudWatch events] (https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings_cloudwatch.html). You can find the [pricing here] (https://aws.amazon.com/guardduty/pricing/).
+
+## AwS Security Hub
+
+
+You can [video] (https://www.youtube.com/watch?v=K7V5kNBjGCI&t=6s) below to understand more about Security Hub and how it helps in detecting threats.
+
+{{< youtube id="K7V5kNBjGCI&t=6s" >}}
 
 ## Labs and Hands-On Resources
 
