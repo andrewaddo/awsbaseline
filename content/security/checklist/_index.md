@@ -78,4 +78,10 @@ Objective: Ensure only authenticated and authorised individuals have the ability
 * Runbooks have been developed and documented for common incident events
 * Incident alerting thresholds are established (CloudWatch Alarms, GuardDuty)
 
-Credit: <https://www.cloudsecurity.asia/policy.html>
+This content is contributed by our Security Specialist [here] (https://www.cloudsecurity.asia/policy.html)
+
+## Next Steps
+
+If you are ready,  you can use this go-to **[Reference Guide]** (https://d1.awsstatic.com/training-and-certification/ramp-up-guides/RampUp_Security_102019_final.pdf) to ramp up your knowledge of fundamentals, concepts, and best practices for securing the AWS Cloud.
+
+

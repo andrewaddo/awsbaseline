@@ -66,7 +66,7 @@ Instead of defining permissions for individual IAM users, it's usually more conv
 
 **Enable MFA**
 
-Wwe recommend that you require multi-factor authentication (MFA) for all users in your account. 
+We recommend that you require multi-factor authentication (MFA) for all users in your account. 
 
 Set up a [multi-factor authentication (MFA) device] (https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_configure-api-require.html) to protect access keys that have only API access. Using MFA can also help fine-tune which API commands require an MFA token to proceed.
 
