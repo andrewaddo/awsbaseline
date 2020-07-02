@@ -25,7 +25,7 @@ You can watch the video below for a quick overview of Amazon Cloudwatch.
 
 Amazon CloudWatch is essentially a metrics repository. To visualize, an AWS service—such as Amazon EC2—puts metrics into the repository, and you retrieve statistics based on those metrics. If you put your own custom metrics into the repository, you can retrieve statistics on these metrics as well.
 
-![Cloudwatch](../img/cloudwatch.png)
+![Reference Architecture](../../security/img/cloudwatch.png)
 
 ## Monitoring Amazon Cloudwatch 
 

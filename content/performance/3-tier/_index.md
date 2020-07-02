@@ -28,7 +28,7 @@ It generally consists of the following components:
 
 The image below is the recommended architecture that you can follow.
 
-![Cloudwatch](../img/3 tier.png)
+![Reference Architecture](../../security/img/3tier.png)
 
 ### Security Best Practices
 
