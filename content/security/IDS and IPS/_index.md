@@ -73,8 +73,11 @@ You can check these tutorials  to setup [GuardDuty] (https://docs.aws.amazon.com
 ### Testing against multiple intrusion scenarios
 
 These [labs] (https://hands-on-guardduty.awssecworkshops.com/) will walk you through a scenario covering threat detection and remediation using Amazon GuardDuty. The labs has 3 components:
+
 * [Compromised EC2 Instance] (https://hands-on-guardduty.awssecworkshops.com/scenario1/)
+
 * [Compromised IAM Credentials] (https://hands-on-guardduty.awssecworkshops.com/scenario2/)
+
 * [IAM Role Exfiltration] (https://hands-on-guardduty.awssecworkshops.com/scenario3/)
 
 ### Monitoring Host-Based Intrusion Detection System Alerts
