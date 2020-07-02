@@ -1,7 +1,7 @@
 +++
 title = "Webinars"
 date = 2020-06-13T05:13:03+08:00
-weight = 1
+weight = 7
 chapter = true
 pre = "<b>1. </b>"
 +++

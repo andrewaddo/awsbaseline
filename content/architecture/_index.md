@@ -1,12 +1,12 @@
 +++
 title = "Reference Architectures"
 date = 2020-06-13T05:13:03+08:00
-weight = 1
+weight = 6
 chapter = true
 pre = "<b>1. </b>"
 +++
 
-### Chapter 6
+### Appendix A
 
 # Reference Architectures
 
