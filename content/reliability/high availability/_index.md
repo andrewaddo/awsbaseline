@@ -83,22 +83,6 @@ To have a visual overview, you can find the [video] (https://www.youtube.com/wat
 
 {{< youtube id="6uE2XULbT3o" >}}
 
-## Baseline Requirement for High Availability
-
-Creating a highly available environment is done according to the needs of internal stakeholders, regulators and integrating partner’s. This section provides high availability and multi-AZ in AWS, along with a comprehensive list of requirements that you must consider before configuring your architecture.
-
-#### Internal Requirements
-<>
-<>
-
-#### Regulatory Requirements
-<>
-<>
-
-#### Integrating Partner's Requirements
-<>
-<>
-
 ## Labs and Hands-on Resources
 
 Looks like you are all set! To help you implement, here are some labs that we recommend you can practice on.

@@ -29,22 +29,6 @@ Setting up backup and restore is done according to the needs of internal stakeho
 You can watch the [video] (https://www.youtube.com/watch?v=cBh_Tlg-2yM&list=PLhr1KZpdzukf2K67aldy_A1pAC-SkpPWz&index=8&t=34s) below to understand more.
 {{< youtube id="cBh_Tlg-2yM&list=PLhr1KZpdzukf2K67aldy_A1pAC-SkpPWz&index=8&t=0s" >}}
 
-Setting up backup and retore depend on the requirements from regulatory bodies, partners and internal requirements which we will discuss below.
-
-#### Internal Requirements
-<>
-<>
-
-#### Regulatory Requirements
-<>
-<>
-
-#### Integrating Partner's Requirements
-<>
-<>
-
-### Backup and Archival Services 
-
 The most basic services you can use for backup and archival are [Amazon S3] (https://aws.amazon.com/s3/) and [Amazon Glacier] (https://aws.amazon.com/glacier/). They both offer unlimited capacity and require no volume or media management as backup data sets grow. The  pay-for-whatyou-use model and low cost per GB/month make these services a good fit for data protection use cases.
 
 **Amazon S3**

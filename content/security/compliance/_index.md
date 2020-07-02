@@ -21,7 +21,7 @@ This section discusses AWS services such as Atlas and Artifact that you can use 
 
 ### Enforce Compliance with AWS Artifact
 
-[AWS Artifact] (https://aws.amazon.com/artifact/) is a service that allows you to download AWS security compliance reports such as [ISO] (https://aws.amazon.com/compliance/iso-certified/) and [PCI] reports (https://aws.amazon.com/compliance/pci-dss-level-1-faqs/). Using AWS Artifact, a user in a master account can automatically accept agreements on behalf of all member accounts in an organization, even as new reports and accounts are added.
+[AWS Artifact] (https://aws.amazon.com/artifact/) is a service that allows you to download AWS security compliance reports such as [ISO] (https://aws.amazon.com/compliance/iso-certified/) and [PCI reports] (https://aws.amazon.com/compliance/pci-dss-level-1-faqs/). Using AWS Artifact, a user in a master account can automatically accept agreements on behalf of all member accounts in an organization, even as new reports and accounts are added.
 
 You can watch the [video](https://www.youtube.com/watch?v=ILEoLqpbfXM) below to understand more
 {{< youtube id="ILEoLqpbfXM" >}}
@@ -31,9 +31,13 @@ You can watch the [video](https://www.youtube.com/watch?v=ILEoLqpbfXM) below to 
 [AWS Config] (https://aws.amazon.com/config/) is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources. Config continuously monitors and records your AWS resource configurations and allows you to automate the evaluation of recorded configurations against desired configurations. 
 
 The AWS Config [best practices] (https://aws.amazon.com/blogs/mt/aws-config-best-practices/) include:
+
 * Enable AWS Config in all accounts and Regions
+
 * Record configuration changes to ALL resource types
+
 * Record global resources (such as IAM resources) only in one Region
+
 * Ensure that you have a secure Amazon S3 bucket to collect the configuration history and snapshot files
 
 You can watch the [video] (https://www.youtube.com/watch?v=X_fznJtSyV8) below to understand more:
