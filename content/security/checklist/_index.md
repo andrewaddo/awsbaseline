@@ -82,6 +82,6 @@ This content is contributed by our Security Specialist [here] (https://www.cloud
 
 ## Next Steps
 
-If you are ready,  you can use this go-to **[Reference Guide]** (https://d1.awsstatic.com/training-and-certification/ramp-up-guides/RampUp_Security_102019_final.pdf) to ramp up your knowledge of fundamentals, concepts, and best practices for securing the AWS Cloud.
+If you are ready,  you can use this go-to [Reference Guide] (https://d1.awsstatic.com/training-and-certification/ramp-up-guides/RampUp_Security_102019_final.pdf) to ramp up your knowledge of fundamentals, concepts, and best practices for securing the AWS Cloud.
 
 
