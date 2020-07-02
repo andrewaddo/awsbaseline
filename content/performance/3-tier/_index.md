@@ -28,7 +28,7 @@ It generally consists of the following components:
 
 The image below is the recommended architecture that you can follow.
 
-![Reference Architecture](../../security/img/3tier.png)
+![Reference Architecture](../../security/img/3tier.PNG)
 
 ### Security Best Practices
 
