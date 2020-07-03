@@ -56,7 +56,7 @@ AWS Security Hub provides you with a comprehensive view of your security state i
 
 Security Hub collects security data from across AWS accounts, services, and supported third-party partner products and helps you analyze your security trends and identify the highest priority security issues.
 
-You can [video] (https://www.youtube.com/watch?v=K7V5kNBjGCI&t=6s) below to understand more about Security Hub and how it helps in detecting threats.
+You can watch the [video] (https://www.youtube.com/watch?v=K7V5kNBjGCI&t=6s) below to understand more about Security Hub and how it helps in detecting threats.
 
 {{< youtube id="K7V5kNBjGCI&t=6s" >}}
 
