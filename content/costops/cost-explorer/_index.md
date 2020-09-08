@@ -124,4 +124,4 @@ For certain services like Amazon RDS, you can invest in reserved capacity. With 
 
 ### Labs and Hands-on Resources
 
-1. Additional detailed [labs] (https://wellarchitectedlabs.com/Cost/Fundamentals.html)] for Cost Optimization 
+1. Additional detailed [labs] (https://wellarchitectedlabs.com/Cost/Fundamentals.html) for Cost Optimization 
